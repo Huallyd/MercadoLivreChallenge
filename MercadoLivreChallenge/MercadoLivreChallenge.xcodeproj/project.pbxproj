@@ -18,6 +18,7 @@
 		4020BD5C228371990003E11D /* ProductMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD5A228371990003E11D /* ProductMock.swift */; };
 		4020BD5E228384710003E11D /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD5D228384710003E11D /* ErrorPresenter.swift */; };
 		4020BD602283847B0003E11D /* EmptyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD5F2283847B0003E11D /* EmptyPresenter.swift */; };
+		4020BD6222838C420003E11D /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD6122838C420003E11D /* ResponseError.swift */; };
 		40E50B5222834ACD00349724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B5122834ACD00349724 /* AppDelegate.swift */; };
 		40E50B5922834AD000349724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E50B5822834AD000349724 /* Assets.xcassets */; };
 		40E50B5C22834AD000349724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E50B5A22834AD000349724 /* LaunchScreen.storyboard */; };
@@ -74,6 +75,7 @@
 		4020BD5A228371990003E11D /* ProductMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMock.swift; sourceTree = "<group>"; };
 		4020BD5D228384710003E11D /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
 		4020BD5F2283847B0003E11D /* EmptyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPresenter.swift; sourceTree = "<group>"; };
+		4020BD6122838C420003E11D /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
 		40E50B4E22834ACD00349724 /* MercadoLivreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLivreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E50B5122834ACD00349724 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40E50B5822834AD000349724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			children = (
 				40E50B792283531500349724 /* Result.swift */,
 				40E50B7D2283549F00349724 /* ProductService.swift */,
+				4020BD6122838C420003E11D /* ResponseError.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -691,6 +694,7 @@
 				40E50BA6228359E000349724 /* GetProductSearchPresenter.swift in Sources */,
 				40E50B96228357D600349724 /* ProductListTableViewCell.swift in Sources */,
 				40E50B852283560A00349724 /* ApplicationCoordinator.swift in Sources */,
+				4020BD6222838C420003E11D /* ResponseError.swift in Sources */,
 				40E50B892283568400349724 /* ProductListCoordinator.swift in Sources */,
 				40E50B7E2283549F00349724 /* ProductService.swift in Sources */,
 				4020BD5E228384710003E11D /* ErrorPresenter.swift in Sources */,
