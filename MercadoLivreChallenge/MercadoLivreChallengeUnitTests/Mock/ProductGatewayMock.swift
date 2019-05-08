@@ -19,6 +19,10 @@ final class ProductGatewayMock: ProductGateway {
         stubbedSearchProductsCompletionResult = (.success(products), ())
     }
 
+    init(error: Error) {
+        stubbedSearchProductsCompletionResult = (.failure(error), ())
+    }
+
     func searchProducts(_ searchString: String, completion: @escaping (Result<[Product]>) -> Void) {
         invokedSearchProducts = true
         invokedSearchProductsCount += 1
