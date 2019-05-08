@@ -14,6 +14,8 @@
 		40E50B5C22834AD000349724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E50B5A22834AD000349724 /* LaunchScreen.storyboard */; };
 		40E50B6722834AD000349724 /* MercadoLivreChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B6622834AD000349724 /* MercadoLivreChallengeTests.swift */; };
 		40E50B7622834F7700349724 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B7522834F7700349724 /* Product.swift */; };
+		40E50B78228352ED00349724 /* ProductGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B77228352ED00349724 /* ProductGateway.swift */; };
+		40E50B7A2283531500349724 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B792283531500349724 /* Result.swift */; };
 		FE881692A2D94B528F8699FF /* Pods_MercadoLivreChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E26452D222C3292DE0A8C0A /* Pods_MercadoLivreChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		40E50B6622834AD000349724 /* MercadoLivreChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLivreChallengeTests.swift; sourceTree = "<group>"; };
 		40E50B6822834AD000349724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E50B7522834F7700349724 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		40E50B77228352ED00349724 /* ProductGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGateway.swift; sourceTree = "<group>"; };
+		40E50B792283531500349724 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		550D46F077D7CBB2F2427389 /* Pods-MercadoLivreChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		68025CCA2601F2A5DB537B21 /* Pods-MercadoLivreChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge.release.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		6E26452D222C3292DE0A8C0A /* Pods_MercadoLivreChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLivreChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +131,7 @@
 		40E50B7222834F2100349724 /* Gateways */ = {
 			isa = PBXGroup;
 			children = (
+				40E50B77228352ED00349724 /* ProductGateway.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 		40E50B7322834F3700349724 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				40E50B792283531500349724 /* Result.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -312,7 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E50B5422834ACD00349724 /* ViewController.swift in Sources */,
+				40E50B7A2283531500349724 /* Result.swift in Sources */,
 				40E50B5222834ACD00349724 /* AppDelegate.swift in Sources */,
+				40E50B78228352ED00349724 /* ProductGateway.swift in Sources */,
 				40E50B7622834F7700349724 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
