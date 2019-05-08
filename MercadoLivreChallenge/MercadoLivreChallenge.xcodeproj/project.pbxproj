@@ -265,8 +265,8 @@
 		40E50B83228355F700349724 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				40E50B842283560A00349724 /* ApplicationCoordinator.swift */,
 				40E50B862283564000349724 /* Coordinator.swift */,
+				40E50B842283560A00349724 /* ApplicationCoordinator.swift */,
 				40E50B882283568400349724 /* ProductListCoordinator.swift */,
 				40E50B8A228356A300349724 /* ProductDetailCoordinator.swift */,
 			);
