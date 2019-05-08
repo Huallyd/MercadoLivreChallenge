@@ -13,6 +13,7 @@
 		40E50B5922834AD000349724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E50B5822834AD000349724 /* Assets.xcassets */; };
 		40E50B5C22834AD000349724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E50B5A22834AD000349724 /* LaunchScreen.storyboard */; };
 		40E50B6722834AD000349724 /* MercadoLivreChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B6622834AD000349724 /* MercadoLivreChallengeTests.swift */; };
+		40E50B7622834F7700349724 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B7522834F7700349724 /* Product.swift */; };
 		FE881692A2D94B528F8699FF /* Pods_MercadoLivreChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E26452D222C3292DE0A8C0A /* Pods_MercadoLivreChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		40E50B6222834AD000349724 /* MercadoLivreChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MercadoLivreChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E50B6622834AD000349724 /* MercadoLivreChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLivreChallengeTests.swift; sourceTree = "<group>"; };
 		40E50B6822834AD000349724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E50B7522834F7700349724 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		550D46F077D7CBB2F2427389 /* Pods-MercadoLivreChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		68025CCA2601F2A5DB537B21 /* Pods-MercadoLivreChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge.release.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		6E26452D222C3292DE0A8C0A /* Pods_MercadoLivreChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLivreChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,8 @@
 		40E50B5022834ACD00349724 /* MercadoLivreChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				40E50B7422834F5000349724 /* Models */,
+				40E50B7122834F1600349724 /* Request */,
 				40E50B5122834ACD00349724 /* AppDelegate.swift */,
 				40E50B5322834ACD00349724 /* ViewController.swift */,
 				40E50B5522834ACD00349724 /* Main.storyboard */,
@@ -111,13 +115,43 @@
 			path = MercadoLivreChallengeTests;
 			sourceTree = "<group>";
 		};
+		40E50B7122834F1600349724 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				40E50B7222834F2100349724 /* Gateways */,
+				40E50B7322834F3700349724 /* Services */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		40E50B7222834F2100349724 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		40E50B7322834F3700349724 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		40E50B7422834F5000349724 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				40E50B7522834F7700349724 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		776F19D7A8A338DF2B029960 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				550D46F077D7CBB2F2427389 /* Pods-MercadoLivreChallenge.debug.xcconfig */,
 				68025CCA2601F2A5DB537B21 /* Pods-MercadoLivreChallenge.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -279,6 +313,7 @@
 			files = (
 				40E50B5422834ACD00349724 /* ViewController.swift in Sources */,
 				40E50B5222834ACD00349724 /* AppDelegate.swift in Sources */,
+				40E50B7622834F7700349724 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
