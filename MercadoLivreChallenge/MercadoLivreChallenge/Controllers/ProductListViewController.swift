@@ -20,6 +20,17 @@ final class ProductListViewController: UIViewController {
         return searchBar
     }()
 
+    private lazy var dataSource: ProductListDataSource = {
+        let completion: ProductListDataSource.CompletionHandler = { [weak self] viewModel in
+            self?.didSelect(viewModel: viewModel)
+        }
+
+        let dataSource = ProductListDataSource(tableView: tableView,
+                                               completion: completion)
+
+        return dataSource
+    }()
+
     private let tableView: UITableView = {
         let tableView = UITableView()
 
@@ -27,26 +38,15 @@ final class ProductListViewController: UIViewController {
     }()
 
     private let gateway: ProductGateway
-
-    private lazy var dataSource: ProductListDataSource = {
-        let completion = weakSelfMethodReference(self, ProductListViewController.didSelect)
-
-        let dataSource = ProductListDataSource(tableView: tableView,
-                                           completion: completion)
-
-        return dataSource
-    }()
     private var delegate: ProductListViewDelegate?
+
+    // MARK: Initializer
 
     init(gateway: ProductGateway, delegate: ProductListViewDelegate) {
         self.gateway = gateway
         self.delegate = delegate
 
         super.init(nibName: nil, bundle: nil)
-    }
-
-    deinit {
-        print("DE INIT PRODUCT LIST VIEW CONTROLLER")
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -58,7 +58,6 @@ final class ProductListViewController: UIViewController {
     override func loadView() {
         super.loadView()
 
-        setupView()
         setupLayout()
     }
 
@@ -70,23 +69,21 @@ final class ProductListViewController: UIViewController {
         }
     }
 
-    private func setupView() {
-        //        view.backgroundColor = .red
-    }
+    // MARK: Private functions
 
     private func setupLayout() {
         view.addSubview(searchBar, constraints: [
             searchBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             searchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-            ])
+        ])
 
         view.addSubview(tableView, constraints: [
             tableView.topAnchor.constraint(equalTo: searchBar.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-            ])
+        ])
     }
 
     private func didSelect(viewModel: ProductViewModel) {

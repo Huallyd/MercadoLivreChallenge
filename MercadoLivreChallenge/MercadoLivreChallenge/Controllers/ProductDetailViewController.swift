@@ -29,21 +29,37 @@ final class ProductDetailViewController: UIViewController {
         return label
     }()
 
+    // MARK: Initialize
+
     init(viewModel: ProductViewModel) {
         super.init(nibName: nil, bundle: nil)
 
         setup(viewModel: viewModel)
-        setupLayout()
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: Life Cycle
+
+    override func loadView() {
+        super.loadView()
+
+        setupView()
+        setupLayout()
+    }
+
+    // MARK: Private functions
+
     private func setup(viewModel: ProductViewModel) {
         titleLabel.text = viewModel.title
         priceLabel.text = "\(viewModel.price)"
         productImageView.kf.setImage(with: viewModel.thumbnail)
+    }
+
+    private func setupView() {
+        view.backgroundColor = .white
     }
 
     private func setupLayout() {

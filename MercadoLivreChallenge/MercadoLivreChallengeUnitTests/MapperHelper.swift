@@ -23,11 +23,3 @@ final class MapperHelper {
         return data
     }
 }
-//
-//extension Array where Element: Decodable {
-//    init(file: String) {
-//        self = []
-//
-//        if let data =
-//    }
-//}
