@@ -9,5 +9,12 @@
 enum Result<T> {
     case success(T)
     case failure(Error)
+
+    func associatedValue() -> Any {
+        switch self {
+        case let .success(value): return value 
+        case let .failure(error): return error
+        }
+    }
 }
 

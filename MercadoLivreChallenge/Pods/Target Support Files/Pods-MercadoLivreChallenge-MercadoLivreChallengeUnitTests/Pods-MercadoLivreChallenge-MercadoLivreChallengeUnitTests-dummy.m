@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests : NSObject
+@end
+@implementation PodsDummy_Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests
+@end
