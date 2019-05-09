@@ -11,9 +11,10 @@ target 'MercadoLivreChallenge' do
   end
 
   target 'MercadoLivreChallengeTests' do
-    pod 'FBSnapshotTestCase'
-    pod 'Quick'
-    pod 'Nimble'
     pod 'KIF'
+    pod 'FBSnapshotTestCase'
+    pod 'Nimble-Snapshots'
+    pod 'Nimble'
+    pod 'Quick'
   end
 end

@@ -5,6 +5,11 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - iOSSnapshotTestCase (6.0.3):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.0.3)
+  - iOSSnapshotTestCase/Core (6.0.3)
+  - iOSSnapshotTestCase/SwiftSupport (6.0.3):
+    - iOSSnapshotTestCase/Core
   - KIF (3.7.7):
     - KIF/Core (= 3.7.7)
   - KIF/Core (3.7.7)
@@ -15,6 +20,11 @@ PODS:
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
   - Nimble (8.0.1)
+  - Nimble-Snapshots (7.1.0):
+    - Nimble-Snapshots/Core (= 7.1.0)
+  - Nimble-Snapshots/Core (7.1.0):
+    - iOSSnapshotTestCase (~> 6.0)
+    - Nimble (~> 8.0)
   - Quick (2.1.0)
   - Result (4.1.0)
 
@@ -25,29 +35,34 @@ DEPENDENCIES:
   - Kingfisher (= 4.9)
   - Moya (~> 13.0)
   - Nimble
+  - Nimble-Snapshots
   - Quick
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - FBSnapshotTestCase
+    - iOSSnapshotTestCase
     - KIF
     - Kingfisher
     - Moya
     - Nimble
+    - Nimble-Snapshots
     - Quick
     - Result
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  iOSSnapshotTestCase: 944a73f6d9676302811a86c0cf35f0e6ef5ab2a0
   KIF: 6f525b18d4cca3d6445f3c5d683294e9157bd3f4
   Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Nimble-Snapshots: 2ec985281eef0eb9fc69a469deee851363a50d0e
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
 
-PODFILE CHECKSUM: 38353b439cc4171f19a2c40cf88468fd29743cdf
+PODFILE CHECKSUM: f6a55e22ec12598e702a15802a56c9037312f23a
 
 COCOAPODS: 1.6.1

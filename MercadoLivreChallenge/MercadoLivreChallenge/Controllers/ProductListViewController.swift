@@ -16,6 +16,9 @@ final class ProductListViewController: UIViewController {
     private lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
         searchBar.delegate = self
+        searchBar.accessibilityIdentifier = "search_bar"
+        searchBar.accessibilityLabel = "Search Bar"
+        
 
         return searchBar
     }()
@@ -58,6 +61,7 @@ final class ProductListViewController: UIViewController {
     override func loadView() {
         super.loadView()
 
+        setupView()
         setupLayout()
     }
 
@@ -70,6 +74,10 @@ final class ProductListViewController: UIViewController {
     }
 
     // MARK: Private functions
+
+    private func setupView() {
+        view.accessibilityLabel = "product_list_identifier"
+    }
 
     private func setupLayout() {
         view.addSubview(searchBar, constraints: [
@@ -106,7 +114,7 @@ extension ProductListViewController: GetProductSearchPresenter {
     }
 
     func show(error: Error) {
-
+        
     }
 
     func showEmpty() {

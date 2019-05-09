@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		392A84026169829B45F65630 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8DDE44A6160C4477D497A5 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework */; };
 		4020BD51228369B40003E11D /* ProductGatewayMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD50228369B40003E11D /* ProductGatewayMock.swift */; };
 		4020BD52228369B40003E11D /* ProductGatewayMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD50228369B40003E11D /* ProductGatewayMock.swift */; };
 		4020BD5422836DD00003E11D /* MapperHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD5322836DD00003E11D /* MapperHelper.swift */; };
@@ -19,10 +18,15 @@
 		4020BD5E228384710003E11D /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD5D228384710003E11D /* ErrorPresenter.swift */; };
 		4020BD602283847B0003E11D /* EmptyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD5F2283847B0003E11D /* EmptyPresenter.swift */; };
 		4020BD6222838C420003E11D /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD6122838C420003E11D /* ResponseError.swift */; };
+		4020BD6522839E2D0003E11D /* ProductListCoordinatorRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD6422839E2D0003E11D /* ProductListCoordinatorRobot.swift */; };
+		4020BD682283B0740003E11D /* ProductListCoordinatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD672283B0740003E11D /* ProductListCoordinatorSpec.swift */; };
+		405298CB2284A1F100CC0A5B /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D2D02284855D0052C375 /* BaseTest.swift */; };
+		406194472283B36100B2DC66 /* KIFUITestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406194462283B36100B2DC66 /* KIFUITestActor.swift */; };
+		406194492283B3A100B2DC66 /* BaseRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406194482283B3A100B2DC66 /* BaseRobot.swift */; };
+		40A9D2D12284855D0052C375 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D2D02284855D0052C375 /* BaseTest.swift */; };
 		40E50B5222834ACD00349724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B5122834ACD00349724 /* AppDelegate.swift */; };
 		40E50B5922834AD000349724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E50B5822834AD000349724 /* Assets.xcassets */; };
 		40E50B5C22834AD000349724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E50B5A22834AD000349724 /* LaunchScreen.storyboard */; };
-		40E50B6722834AD000349724 /* MercadoLivreChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B6622834AD000349724 /* MercadoLivreChallengeTests.swift */; };
 		40E50B7622834F7700349724 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B7522834F7700349724 /* Product.swift */; };
 		40E50B78228352ED00349724 /* ProductGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B77228352ED00349724 /* ProductGateway.swift */; };
 		40E50B7A2283531500349724 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B792283531500349724 /* Result.swift */; };
@@ -46,8 +50,9 @@
 		40E50BB82283632100349724 /* GetProductSearchUseCaseSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50BB72283632100349724 /* GetProductSearchUseCaseSpy.swift */; };
 		40E50BB92283632100349724 /* GetProductSearchUseCaseSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50BB72283632100349724 /* GetProductSearchUseCaseSpy.swift */; };
 		40E50BBC228363BD00349724 /* GetProductSearchUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50BBB228363BD00349724 /* GetProductSearchUseCaseSpec.swift */; };
-		89C271366C81774A40A2B482 /* Pods_MercadoLivreChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B05FD26126E746EBC2D5EC /* Pods_MercadoLivreChallenge.framework */; };
-		90B8364812B55F1752A25435 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03E6CBCBB7CC1E3C91BFF79 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework */; };
+		4F3B6AF8210E1D92329782C5 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E96F0438CF9E92A85EB1E8B /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework */; };
+		75E1FF92DAB65816442AAA5E /* Pods_MercadoLivreChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC129CC3098DB1BFD0BD2CA /* Pods_MercadoLivreChallenge.framework */; };
+		B02F85F1798D8AA367CDB2B3 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FCDF052F89697D3B6AF3FE /* Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +73,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2987D6008E3751D79293A571 /* Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge-MercadoLivreChallengeTests/Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		29ADBD5F0B8403835EF6219C /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests/Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E96F0438CF9E92A85EB1E8B /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4020BD50228369B40003E11D /* ProductGatewayMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGatewayMock.swift; sourceTree = "<group>"; };
 		4020BD5322836DD00003E11D /* MapperHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperHelper.swift; sourceTree = "<group>"; };
 		4020BD5722836F3B0003E11D /* searched_products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searched_products.json; sourceTree = "<group>"; };
@@ -76,13 +82,17 @@
 		4020BD5D228384710003E11D /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
 		4020BD5F2283847B0003E11D /* EmptyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPresenter.swift; sourceTree = "<group>"; };
 		4020BD6122838C420003E11D /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		4020BD6422839E2D0003E11D /* ProductListCoordinatorRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCoordinatorRobot.swift; sourceTree = "<group>"; };
+		4020BD672283B0740003E11D /* ProductListCoordinatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCoordinatorSpec.swift; sourceTree = "<group>"; };
+		406194462283B36100B2DC66 /* KIFUITestActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUITestActor.swift; sourceTree = "<group>"; };
+		406194482283B3A100B2DC66 /* BaseRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRobot.swift; sourceTree = "<group>"; };
+		40A9D2D02284855D0052C375 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
 		40E50B4E22834ACD00349724 /* MercadoLivreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLivreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E50B5122834ACD00349724 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40E50B5822834AD000349724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40E50B5B22834AD000349724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40E50B5D22834AD000349724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E50B6222834AD000349724 /* MercadoLivreChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MercadoLivreChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		40E50B6622834AD000349724 /* MercadoLivreChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLivreChallengeTests.swift; sourceTree = "<group>"; };
 		40E50B6822834AD000349724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E50B7522834F7700349724 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		40E50B77228352ED00349724 /* ProductGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGateway.swift; sourceTree = "<group>"; };
@@ -108,14 +118,13 @@
 		40E50BAF2283610400349724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E50BB72283632100349724 /* GetProductSearchUseCaseSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductSearchUseCaseSpy.swift; sourceTree = "<group>"; };
 		40E50BBB228363BD00349724 /* GetProductSearchUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductSearchUseCaseSpec.swift; sourceTree = "<group>"; };
-		4D65B07FEE54410C85D3FDFB /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests/Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		97CA8792B708C8033E4563B3 /* Pods-MercadoLivreChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		9D855901FD5F2F420C63D9DA /* Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge-MercadoLivreChallengeTests/Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A7B05FD26126E746EBC2D5EC /* Pods_MercadoLivreChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLivreChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC06EDCFA5909D8DECDF676D /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests/Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig"; sourceTree = "<group>"; };
-		EC8DDE44A6160C4477D497A5 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F004BE0BC4F6909EDCA5FEF3 /* Pods-MercadoLivreChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge.release.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		F03E6CBCBB7CC1E3C91BFF79 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC129CC3098DB1BFD0BD2CA /* Pods_MercadoLivreChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLivreChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FDD89D77498D5405EA84B05 /* Pods-MercadoLivreChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge.release.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		76D5B35095DB8A432A4FA863 /* Pods-MercadoLivreChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		9372698D83E8EA52D722B33B /* Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge-MercadoLivreChallengeTests/Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A8FCDF052F89697D3B6AF3FE /* Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC19BA1CDFE82E19C2DE8D33 /* Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge-MercadoLivreChallengeTests/Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D90AC99013ACFFFD1D7E9868 /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests/Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89C271366C81774A40A2B482 /* Pods_MercadoLivreChallenge.framework in Frameworks */,
+				75E1FF92DAB65816442AAA5E /* Pods_MercadoLivreChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				392A84026169829B45F65630 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework in Frameworks */,
+				4F3B6AF8210E1D92329782C5 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90B8364812B55F1752A25435 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework in Frameworks */,
+				B02F85F1798D8AA367CDB2B3 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,14 +163,30 @@
 			path = JSONFiles;
 			sourceTree = "<group>";
 		};
-		40ADD388CAED075FEB197459 /* Frameworks */ = {
+		4020BD6322839CD40003E11D /* Robot */ = {
 			isa = PBXGroup;
 			children = (
-				A7B05FD26126E746EBC2D5EC /* Pods_MercadoLivreChallenge.framework */,
-				F03E6CBCBB7CC1E3C91BFF79 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework */,
-				EC8DDE44A6160C4477D497A5 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework */,
+				4020BD6422839E2D0003E11D /* ProductListCoordinatorRobot.swift */,
+				406194482283B3A100B2DC66 /* BaseRobot.swift */,
+				40A9D2D02284855D0052C375 /* BaseTest.swift */,
 			);
-			name = Frameworks;
+			path = Robot;
+			sourceTree = "<group>";
+		};
+		4020BD662283B0530003E11D /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				4020BD672283B0740003E11D /* ProductListCoordinatorSpec.swift */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		406194452283B34B00B2DC66 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				406194462283B36100B2DC66 /* KIFUITestActor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		40E50B4522834ACD00349724 = {
@@ -172,7 +197,7 @@
 				40E50BAC2283610400349724 /* MercadoLivreChallengeUnitTests */,
 				40E50B4F22834ACD00349724 /* Products */,
 				776F19D7A8A338DF2B029960 /* Pods */,
-				40ADD388CAED075FEB197459 /* Frameworks */,
+				78FE42E9DD6AA89A11AC1B35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,7 +234,9 @@
 		40E50B6522834AD000349724 /* MercadoLivreChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				40E50B6622834AD000349724 /* MercadoLivreChallengeTests.swift */,
+				406194452283B34B00B2DC66 /* Extensions */,
+				4020BD662283B0530003E11D /* Specs */,
+				4020BD6322839CD40003E11D /* Robot */,
 				40E50B6822834AD000349724 /* Info.plist */,
 			);
 			path = MercadoLivreChallengeTests;
@@ -366,14 +393,24 @@
 		776F19D7A8A338DF2B029960 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				97CA8792B708C8033E4563B3 /* Pods-MercadoLivreChallenge.debug.xcconfig */,
-				F004BE0BC4F6909EDCA5FEF3 /* Pods-MercadoLivreChallenge.release.xcconfig */,
-				4D65B07FEE54410C85D3FDFB /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.debug.xcconfig */,
-				AC06EDCFA5909D8DECDF676D /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig */,
-				9D855901FD5F2F420C63D9DA /* Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.debug.xcconfig */,
-				2987D6008E3751D79293A571 /* Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.release.xcconfig */,
+				76D5B35095DB8A432A4FA863 /* Pods-MercadoLivreChallenge.debug.xcconfig */,
+				5FDD89D77498D5405EA84B05 /* Pods-MercadoLivreChallenge.release.xcconfig */,
+				AC19BA1CDFE82E19C2DE8D33 /* Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.debug.xcconfig */,
+				9372698D83E8EA52D722B33B /* Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.release.xcconfig */,
+				D90AC99013ACFFFD1D7E9868 /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.debug.xcconfig */,
+				29ADBD5F0B8403835EF6219C /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		78FE42E9DD6AA89A11AC1B35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EC129CC3098DB1BFD0BD2CA /* Pods_MercadoLivreChallenge.framework */,
+				2E96F0438CF9E92A85EB1E8B /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework */,
+				A8FCDF052F89697D3B6AF3FE /* Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,11 +420,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40E50B6B22834AD000349724 /* Build configuration list for PBXNativeTarget "MercadoLivreChallenge" */;
 			buildPhases = (
-				0CEE028D675158FDF58F1ACC /* [CP] Check Pods Manifest.lock */,
+				8B20A5C82379BD4F58556849 /* [CP] Check Pods Manifest.lock */,
 				40E50B4A22834ACD00349724 /* Sources */,
 				40E50B4B22834ACD00349724 /* Frameworks */,
 				40E50B4C22834ACD00349724 /* Resources */,
-				FF34166429CDB3B3458D4568 /* [CP] Embed Pods Frameworks */,
+				691CD24CCE4438FE1A1066F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -402,11 +439,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40E50B6E22834AD000349724 /* Build configuration list for PBXNativeTarget "MercadoLivreChallengeTests" */;
 			buildPhases = (
-				076675B9E273EE6C7DD87FC1 /* [CP] Check Pods Manifest.lock */,
+				6A839F88C9F0DBB987EF8DC0 /* [CP] Check Pods Manifest.lock */,
 				40E50B5E22834AD000349724 /* Sources */,
 				40E50B5F22834AD000349724 /* Frameworks */,
 				40E50B6022834AD000349724 /* Resources */,
-				0511B1F34D47A5F4F3DBC5B2 /* [CP] Embed Pods Frameworks */,
+				1A6824E643B3F328C7E6B348 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -422,11 +459,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40E50BB22283610400349724 /* Build configuration list for PBXNativeTarget "MercadoLivreChallengeUnitTests" */;
 			buildPhases = (
-				74C128ED692D1BDCBD1A13C6 /* [CP] Check Pods Manifest.lock */,
+				83A1762AB8138E74EA185C19 /* [CP] Check Pods Manifest.lock */,
 				40E50BA72283610400349724 /* Sources */,
 				40E50BA82283610400349724 /* Frameworks */,
 				40E50BA92283610400349724 /* Resources */,
-				E28D57D0BC4A923A7BEBFCE8 /* [CP] Embed Pods Frameworks */,
+				CE85AFA45EA0EF91F336CE8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -510,7 +547,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0511B1F34D47A5F4F3DBC5B2 /* [CP] Embed Pods Frameworks */ = {
+		1A6824E643B3F328C7E6B348 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -527,6 +564,8 @@
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -540,13 +579,42 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MercadoLivreChallenge-MercadoLivreChallengeTests/Pods-MercadoLivreChallenge-MercadoLivreChallengeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		076675B9E273EE6C7DD87FC1 /* [CP] Check Pods Manifest.lock */ = {
+		691CD24CCE4438FE1A1066F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A839F88C9F0DBB987EF8DC0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -568,29 +636,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0CEE028D675158FDF58F1ACC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MercadoLivreChallenge-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		74C128ED692D1BDCBD1A13C6 /* [CP] Check Pods Manifest.lock */ = {
+		83A1762AB8138E74EA185C19 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -612,7 +658,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E28D57D0BC4A923A7BEBFCE8 /* [CP] Embed Pods Frameworks */ = {
+		8B20A5C82379BD4F58556849 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MercadoLivreChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE85AFA45EA0EF91F336CE8A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -642,34 +710,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests/Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FF34166429CDB3B3458D4568 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -710,11 +750,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A9D2D12284855D0052C375 /* BaseTest.swift in Sources */,
+				406194472283B36100B2DC66 /* KIFUITestActor.swift in Sources */,
 				4020BD5B228371990003E11D /* ProductMock.swift in Sources */,
+				4020BD6522839E2D0003E11D /* ProductListCoordinatorRobot.swift in Sources */,
+				406194492283B3A100B2DC66 /* BaseRobot.swift in Sources */,
 				4020BD51228369B40003E11D /* ProductGatewayMock.swift in Sources */,
 				40E50BB82283632100349724 /* GetProductSearchUseCaseSpy.swift in Sources */,
+				4020BD682283B0740003E11D /* ProductListCoordinatorSpec.swift in Sources */,
 				4020BD5422836DD00003E11D /* MapperHelper.swift in Sources */,
-				40E50B6722834AD000349724 /* MercadoLivreChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,6 +770,7 @@
 				4020BD52228369B40003E11D /* ProductGatewayMock.swift in Sources */,
 				40E50BB92283632100349724 /* GetProductSearchUseCaseSpy.swift in Sources */,
 				4020BD5522836DD00003E11D /* MapperHelper.swift in Sources */,
+				405298CB2284A1F100CC0A5B /* BaseTest.swift in Sources */,
 				40E50BBC228363BD00349724 /* GetProductSearchUseCaseSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -875,7 +920,7 @@
 		};
 		40E50B6C22834AD000349724 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97CA8792B708C8033E4563B3 /* Pods-MercadoLivreChallenge.debug.xcconfig */;
+			baseConfigurationReference = 76D5B35095DB8A432A4FA863 /* Pods-MercadoLivreChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -893,7 +938,7 @@
 		};
 		40E50B6D22834AD000349724 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F004BE0BC4F6909EDCA5FEF3 /* Pods-MercadoLivreChallenge.release.xcconfig */;
+			baseConfigurationReference = 5FDD89D77498D5405EA84B05 /* Pods-MercadoLivreChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -911,7 +956,7 @@
 		};
 		40E50B6F22834AD000349724 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D855901FD5F2F420C63D9DA /* Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.debug.xcconfig */;
+			baseConfigurationReference = AC19BA1CDFE82E19C2DE8D33 /* Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -932,7 +977,7 @@
 		};
 		40E50B7022834AD000349724 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2987D6008E3751D79293A571 /* Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.release.xcconfig */;
+			baseConfigurationReference = 9372698D83E8EA52D722B33B /* Pods-MercadoLivreChallenge-MercadoLivreChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -953,7 +998,7 @@
 		};
 		40E50BB32283610400349724 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D65B07FEE54410C85D3FDFB /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.debug.xcconfig */;
+			baseConfigurationReference = D90AC99013ACFFFD1D7E9868 /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -973,7 +1018,7 @@
 		};
 		40E50BB42283610400349724 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC06EDCFA5909D8DECDF676D /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig */;
+			baseConfigurationReference = 29ADBD5F0B8403835EF6219C /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
