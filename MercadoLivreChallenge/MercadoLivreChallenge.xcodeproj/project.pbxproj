@@ -26,6 +26,7 @@
 		405298D12284C5BA00CC0A5B /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405298D02284C5BA00CC0A5B /* String+Substring.swift */; };
 		406194472283B36100B2DC66 /* KIFUITestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406194462283B36100B2DC66 /* KIFUITestActor.swift */; };
 		406194492283B3A100B2DC66 /* BaseRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406194482283B3A100B2DC66 /* BaseRobot.swift */; };
+		407792692284D41F000B6B77 /* ProductCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407792682284D41F000B6B77 /* ProductCondition.swift */; };
 		40A9D2D12284855D0052C375 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D2D02284855D0052C375 /* BaseTest.swift */; };
 		40E50B5222834ACD00349724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B5122834ACD00349724 /* AppDelegate.swift */; };
 		40E50B5922834AD000349724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E50B5822834AD000349724 /* Assets.xcassets */; };
@@ -92,6 +93,7 @@
 		405298D02284C5BA00CC0A5B /* String+Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Substring.swift"; sourceTree = "<group>"; };
 		406194462283B36100B2DC66 /* KIFUITestActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUITestActor.swift; sourceTree = "<group>"; };
 		406194482283B3A100B2DC66 /* BaseRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRobot.swift; sourceTree = "<group>"; };
+		407792682284D41F000B6B77 /* ProductCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCondition.swift; sourceTree = "<group>"; };
 		40A9D2D02284855D0052C375 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
 		40E50B4E22834ACD00349724 /* MercadoLivreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLivreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E50B5122834ACD00349724 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 			children = (
 				40E50B7522834F7700349724 /* Product.swift */,
 				40E50B8E2283572300349724 /* ProductViewModel.swift */,
+				407792682284D41F000B6B77 /* ProductCondition.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -737,6 +740,7 @@
 				40E50B7A2283531500349724 /* Result.swift in Sources */,
 				40E50B922283579000349724 /* ProductListDataSource.swift in Sources */,
 				40E50B992283585200349724 /* UIView+Constraints.swift in Sources */,
+				407792692284D41F000B6B77 /* ProductCondition.swift in Sources */,
 				40E50B8D228356E800349724 /* ProductDetailViewController.swift in Sources */,
 				405298D12284C5BA00CC0A5B /* String+Substring.swift in Sources */,
 				40E50B5222834ACD00349724 /* AppDelegate.swift in Sources */,

@@ -20,18 +20,23 @@ final class ProductListTableViewCell: UITableViewCell, Reusable {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
+        label.font = .systemFont(ofSize: 14)
 
         return label
     }()
 
-    private let priceLabel: UILabel = {
+    private let priceLabel = UILabel()
+
+    private let conditionLabel: UILabel = {
         let label = UILabel()
+        label.textColor = .gray
+        label.font = .systemFont(ofSize: 10)
 
         return label
     }()
 
     private lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [titleLabel, priceLabel])
+        let stackView = UIStackView(arrangedSubviews: [conditionLabel, titleLabel, priceLabel])
         stackView.axis = .vertical
         stackView.spacing = 6
 
@@ -66,8 +71,8 @@ final class ProductListTableViewCell: UITableViewCell, Reusable {
     func setup(viewModel: ProductViewModel) {
         titleLabel.text = viewModel.title
         priceLabel.attributedText = viewModel.price
+        conditionLabel.text = viewModel.condition
         productImageView.kf.setImage(with: viewModel.thumbnail)
-
     }
 }
 

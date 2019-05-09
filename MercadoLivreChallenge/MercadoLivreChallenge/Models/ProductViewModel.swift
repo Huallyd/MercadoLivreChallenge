@@ -13,10 +13,12 @@ struct ProductViewModel {
     let title: String
     let price: NSAttributedString
     let thumbnail: URL
+    let condition: String
 
     init(product: Product) {
-        self.title = product.title
-        self.thumbnail = product.thumbnail
+        title = product.title
+        thumbnail = product.thumbnail
+        condition = product.condition.rawValue
 
         let formattedPrice = String(format: "%.02f", product.price)
 

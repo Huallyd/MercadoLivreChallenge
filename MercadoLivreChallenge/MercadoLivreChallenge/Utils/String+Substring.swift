@@ -25,5 +25,4 @@ extension String {
 
         return String(self[start ..< end])
     }
-
 }
