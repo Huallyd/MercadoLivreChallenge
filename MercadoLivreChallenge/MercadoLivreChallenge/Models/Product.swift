@@ -13,6 +13,7 @@ struct Product {
     let title: String
     let price: Double
     let thumbnail: URL
+    let currencyId: String
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -21,6 +22,7 @@ struct Product {
         title = try container.decode(String.self, forKey: .title)
         price = (try? container.decode(Double.self, forKey: .price)) ?? 0.00
         thumbnail = try container.decode(URL.self, forKey: .thumbnail)
+        currencyId = (try? container.decode(String.self, forKey: .currencyId)) ?? ""
     }
 }
 
@@ -30,6 +32,7 @@ extension Product: Decodable {
         case title
         case price
         case thumbnail
+        case currencyId = "currency_id"
     }
 }
 

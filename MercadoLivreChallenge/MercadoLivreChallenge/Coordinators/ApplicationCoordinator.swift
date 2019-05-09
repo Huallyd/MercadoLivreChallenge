@@ -18,6 +18,12 @@ final class ApplicationCoordinator {
         self.gateway = gateway
 
         rootNavigationViewController = UINavigationController()
+
+        setupNavigationView()
+    }
+
+    private func setupNavigationView() {
+        rootNavigationViewController.navigationBar.barTintColor = .gem
     }
 }
 

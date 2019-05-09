@@ -21,6 +21,9 @@
 		4020BD6522839E2D0003E11D /* ProductListCoordinatorRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD6422839E2D0003E11D /* ProductListCoordinatorRobot.swift */; };
 		4020BD682283B0740003E11D /* ProductListCoordinatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD672283B0740003E11D /* ProductListCoordinatorSpec.swift */; };
 		405298CB2284A1F100CC0A5B /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D2D02284855D0052C375 /* BaseTest.swift */; };
+		405298CD2284B45800CC0A5B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405298CC2284B45800CC0A5B /* UIColor.swift */; };
+		405298CF2284C34400CC0A5B /* NSMutableAttributedString+LabelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405298CE2284C34400CC0A5B /* NSMutableAttributedString+LabelConfiguration.swift */; };
+		405298D12284C5BA00CC0A5B /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405298D02284C5BA00CC0A5B /* String+Substring.swift */; };
 		406194472283B36100B2DC66 /* KIFUITestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406194462283B36100B2DC66 /* KIFUITestActor.swift */; };
 		406194492283B3A100B2DC66 /* BaseRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406194482283B3A100B2DC66 /* BaseRobot.swift */; };
 		40A9D2D12284855D0052C375 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D2D02284855D0052C375 /* BaseTest.swift */; };
@@ -84,6 +87,9 @@
 		4020BD6122838C420003E11D /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
 		4020BD6422839E2D0003E11D /* ProductListCoordinatorRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCoordinatorRobot.swift; sourceTree = "<group>"; };
 		4020BD672283B0740003E11D /* ProductListCoordinatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCoordinatorSpec.swift; sourceTree = "<group>"; };
+		405298CC2284B45800CC0A5B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		405298CE2284C34400CC0A5B /* NSMutableAttributedString+LabelConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+LabelConfiguration.swift"; sourceTree = "<group>"; };
+		405298D02284C5BA00CC0A5B /* String+Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Substring.swift"; sourceTree = "<group>"; };
 		406194462283B36100B2DC66 /* KIFUITestActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUITestActor.swift; sourceTree = "<group>"; };
 		406194482283B3A100B2DC66 /* BaseRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRobot.swift; sourceTree = "<group>"; };
 		40A9D2D02284855D0052C375 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
@@ -330,6 +336,9 @@
 				40E50B982283585200349724 /* UIView+Constraints.swift */,
 				40E50B9D2283590E00349724 /* Reusable.swift */,
 				40E50B9F2283594100349724 /* UITableView+Reusable.swift */,
+				405298CC2284B45800CC0A5B /* UIColor.swift */,
+				405298CE2284C34400CC0A5B /* NSMutableAttributedString+LabelConfiguration.swift */,
+				405298D02284C5BA00CC0A5B /* String+Substring.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -724,10 +733,12 @@
 				40E50BA4228359C600349724 /* GetProductSearchUseCase.swift in Sources */,
 				40E50B7C2283547200349724 /* ProductMoyaGateway.swift in Sources */,
 				40E50B872283564000349724 /* Coordinator.swift in Sources */,
+				405298CF2284C34400CC0A5B /* NSMutableAttributedString+LabelConfiguration.swift in Sources */,
 				40E50B7A2283531500349724 /* Result.swift in Sources */,
 				40E50B922283579000349724 /* ProductListDataSource.swift in Sources */,
 				40E50B992283585200349724 /* UIView+Constraints.swift in Sources */,
 				40E50B8D228356E800349724 /* ProductDetailViewController.swift in Sources */,
+				405298D12284C5BA00CC0A5B /* String+Substring.swift in Sources */,
 				40E50B5222834ACD00349724 /* AppDelegate.swift in Sources */,
 				40E50B9C228358C200349724 /* ProductListViewDelegate.swift in Sources */,
 				40E50B78228352ED00349724 /* ProductGateway.swift in Sources */,
@@ -738,6 +749,7 @@
 				40E50B892283568400349724 /* ProductListCoordinator.swift in Sources */,
 				40E50B7E2283549F00349724 /* ProductService.swift in Sources */,
 				4020BD5E228384710003E11D /* ErrorPresenter.swift in Sources */,
+				405298CD2284B45800CC0A5B /* UIColor.swift in Sources */,
 				40E50B8B228356A300349724 /* ProductDetailCoordinator.swift in Sources */,
 				40E50B9E2283590E00349724 /* Reusable.swift in Sources */,
 				40E50B82228355E000349724 /* ProductListViewController.swift in Sources */,

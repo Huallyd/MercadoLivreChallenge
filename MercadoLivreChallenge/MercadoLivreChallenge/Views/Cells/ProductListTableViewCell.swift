@@ -12,13 +12,14 @@ import Kingfisher
 final class ProductListTableViewCell: UITableViewCell, Reusable {
     private let productImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .red
+        imageView.contentMode = .scaleAspectFit
 
         return imageView
     }()
 
     private let titleLabel: UILabel = {
         let label = UILabel()
+        label.numberOfLines = 0
 
         return label
     }()
@@ -27,6 +28,14 @@ final class ProductListTableViewCell: UITableViewCell, Reusable {
         let label = UILabel()
 
         return label
+    }()
+
+    private lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [titleLabel, priceLabel])
+        stackView.axis = .vertical
+        stackView.spacing = 6
+
+        return stackView
     }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -41,27 +50,24 @@ final class ProductListTableViewCell: UITableViewCell, Reusable {
 
     private func setupLayout() {
         addSubview(productImageView, constraints: [
-            productImageView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-            productImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
-            productImageView.heightAnchor.constraint(equalToConstant: 50),
-            productImageView.widthAnchor.constraint(equalToConstant: 50)
+            productImageView.topAnchor.constraint(equalTo: topAnchor, constant: 12),
+            productImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            productImageView.heightAnchor.constraint(equalToConstant: 70),
+            productImageView.widthAnchor.constraint(equalToConstant: 70)
         ])
 
-        addSubview(titleLabel, constraints: [
-            titleLabel.topAnchor.constraint(equalTo: productImageView.bottomAnchor, constant: 20),
-            titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor)
-        ])
-
-        addSubview(priceLabel, constraints: [
-            priceLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
-            priceLabel.centerXAnchor.constraint(equalTo: titleLabel.centerXAnchor)
+        addSubview(stackView, constraints: [
+            stackView.topAnchor.constraint(equalTo: productImageView.topAnchor),
+            stackView.leadingAnchor.constraint(equalTo: productImageView.trailingAnchor, constant: 16),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10)
         ])
     }
 
     func setup(viewModel: ProductViewModel) {
         titleLabel.text = viewModel.title
-        priceLabel.text = "\(viewModel.price)"
+        priceLabel.attributedText = viewModel.price
         productImageView.kf.setImage(with: viewModel.thumbnail)
+
     }
 }
 

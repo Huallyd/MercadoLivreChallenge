@@ -17,6 +17,7 @@ final class ProductListViewController: UIViewController {
         let searchBar = UISearchBar()
         searchBar.delegate = self
         searchBar.accessibilityLabel = "Search Bar"
+        searchBar.barTintColor = .gem
 
         return searchBar
     }()
@@ -39,7 +40,7 @@ final class ProductListViewController: UIViewController {
     }()
 
     private let gateway: ProductGateway
-    private var delegate: ProductListViewDelegate?
+    private let delegate: ProductListViewDelegate
 
     // MARK: Initializer
 
@@ -93,7 +94,7 @@ final class ProductListViewController: UIViewController {
     }
 
     private func didSelect(viewModel: ProductViewModel) {
-        delegate?.didSelect(product: viewModel)
+        delegate.didSelect(product: viewModel)
     }
 }
 
