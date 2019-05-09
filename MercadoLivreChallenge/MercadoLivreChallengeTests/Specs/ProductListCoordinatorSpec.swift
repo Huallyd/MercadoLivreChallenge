@@ -7,9 +7,6 @@
 //
 
 import Quick
-import Nimble
-import Nimble_Snapshots
-import FBSnapshotTestCase
 
 @testable import MercadoLivreChallenge
 
@@ -29,7 +26,7 @@ final class ProductListCoordinatorSpec: BaseTest {
                     .make(self).load(gateway: gateway)
                     .search(text: "play")
                     .result()
-                    .checkSimplePromotion()
+                    .checkList()
             }
         }
     }

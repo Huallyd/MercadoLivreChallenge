@@ -16,9 +16,7 @@ final class ProductListViewController: UIViewController {
     private lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
         searchBar.delegate = self
-        searchBar.accessibilityIdentifier = "search_bar"
         searchBar.accessibilityLabel = "Search Bar"
-        
 
         return searchBar
     }()
@@ -76,7 +74,7 @@ final class ProductListViewController: UIViewController {
     // MARK: Private functions
 
     private func setupView() {
-        view.accessibilityLabel = "product_list_identifier"
+        view.accessibilityLabel = "Search List"
     }
 
     private func setupLayout() {

@@ -7,7 +7,6 @@
 //
 
 import KIF
-import UIKit
 import Quick
 
 @testable import MercadoLivreChallenge

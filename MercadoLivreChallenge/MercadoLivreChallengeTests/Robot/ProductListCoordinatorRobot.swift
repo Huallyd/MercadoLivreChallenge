@@ -42,11 +42,11 @@ final class ProductListCoordinatorRobot: BaseRobot {
 }
 
 final class ProductListCoordinatorResult: BaseRobot {
-    let identifier = "product_list_identifier"
+    let label = "Search List"
 
     @discardableResult
     func checkList() -> ProductListCoordinatorResult {
-        let productList: UIView = tester.waitForView(withAccessibilityLabel: identifier)
+        let productList: UIView = tester.waitForView(withAccessibilityLabel: label)
     
         expect(productList) == recordSnapshot("product_list")
 
