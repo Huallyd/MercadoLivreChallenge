@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4002E9832285D6E4001982F9 /* ProductViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002E9822285D6E4001982F9 /* ProductViewState.swift */; };
+		4002E9872285D858001982F9 /* ProductViewStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002E9862285D858001982F9 /* ProductViewStateView.swift */; };
+		4002E9892285E511001982F9 /* NSLayoutConstraint+Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002E9882285E511001982F9 /* NSLayoutConstraint+Priority.swift */; };
 		4020BD51228369B40003E11D /* ProductGatewayMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD50228369B40003E11D /* ProductGatewayMock.swift */; };
 		4020BD52228369B40003E11D /* ProductGatewayMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD50228369B40003E11D /* ProductGatewayMock.swift */; };
 		4020BD5422836DD00003E11D /* MapperHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020BD5322836DD00003E11D /* MapperHelper.swift */; };
@@ -25,7 +28,7 @@
 		405298CD2284B45800CC0A5B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405298CC2284B45800CC0A5B /* UIColor.swift */; };
 		405298CF2284C34400CC0A5B /* NSMutableAttributedString+LabelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405298CE2284C34400CC0A5B /* NSMutableAttributedString+LabelConfiguration.swift */; };
 		405298D12284C5BA00CC0A5B /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405298D02284C5BA00CC0A5B /* String+Substring.swift */; };
-		406194472283B36100B2DC66 /* KIFUITestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406194462283B36100B2DC66 /* KIFUITestActor.swift */; };
+		406194472283B36100B2DC66 /* Quick+KIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406194462283B36100B2DC66 /* Quick+KIF.swift */; };
 		406194492283B3A100B2DC66 /* BaseRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406194482283B3A100B2DC66 /* BaseRobot.swift */; };
 		407792692284D41F000B6B77 /* ProductCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407792682284D41F000B6B77 /* ProductCondition.swift */; };
 		4077926B2284EA1A000B6B77 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4077926A2284EA1A000B6B77 /* RoundImageView.swift */; };
@@ -83,6 +86,9 @@
 /* Begin PBXFileReference section */
 		29ADBD5F0B8403835EF6219C /* Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests/Pods-MercadoLivreChallenge-MercadoLivreChallengeUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		2E96F0438CF9E92A85EB1E8B /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4002E9822285D6E4001982F9 /* ProductViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewState.swift; sourceTree = "<group>"; };
+		4002E9862285D858001982F9 /* ProductViewStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewStateView.swift; sourceTree = "<group>"; };
+		4002E9882285E511001982F9 /* NSLayoutConstraint+Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Priority.swift"; sourceTree = "<group>"; };
 		4020BD50228369B40003E11D /* ProductGatewayMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGatewayMock.swift; sourceTree = "<group>"; };
 		4020BD5322836DD00003E11D /* MapperHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperHelper.swift; sourceTree = "<group>"; };
 		4020BD5722836F3B0003E11D /* searched_products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searched_products.json; sourceTree = "<group>"; };
@@ -96,7 +102,7 @@
 		405298CC2284B45800CC0A5B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		405298CE2284C34400CC0A5B /* NSMutableAttributedString+LabelConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+LabelConfiguration.swift"; sourceTree = "<group>"; };
 		405298D02284C5BA00CC0A5B /* String+Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Substring.swift"; sourceTree = "<group>"; };
-		406194462283B36100B2DC66 /* KIFUITestActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUITestActor.swift; sourceTree = "<group>"; };
+		406194462283B36100B2DC66 /* Quick+KIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quick+KIF.swift"; sourceTree = "<group>"; };
 		406194482283B3A100B2DC66 /* BaseRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRobot.swift; sourceTree = "<group>"; };
 		407792682284D41F000B6B77 /* ProductCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCondition.swift; sourceTree = "<group>"; };
 		4077926A2284EA1A000B6B77 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
@@ -171,6 +177,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4002E9852285D809001982F9 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				4002E9862285D858001982F9 /* ProductViewStateView.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
 		4020BD5622836ECA0003E11D /* JSONFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +214,7 @@
 		406194452283B34B00B2DC66 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				406194462283B36100B2DC66 /* KIFUITestActor.swift */,
+				406194462283B36100B2DC66 /* Quick+KIF.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,6 +314,7 @@
 				40E50B7522834F7700349724 /* Product.swift */,
 				40E50B8E2283572300349724 /* ProductViewModel.swift */,
 				407792682284D41F000B6B77 /* ProductCondition.swift */,
+				4002E9822285D6E4001982F9 /* ProductViewState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -338,6 +353,7 @@
 			children = (
 				4077927022850A14000B6B77 /* Factory */,
 				40E50B94228357BE00349724 /* Cells */,
+				4002E9852285D809001982F9 /* States */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +377,7 @@
 				405298D02284C5BA00CC0A5B /* String+Substring.swift */,
 				4077926A2284EA1A000B6B77 /* RoundImageView.swift */,
 				4083624E2285B4EA00E1B8B1 /* UIView+ActivityIndicator.swift */,
+				4002E9882285E511001982F9 /* NSLayoutConstraint+Priority.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -764,6 +781,7 @@
 				40E50B992283585200349724 /* UIView+Constraints.swift in Sources */,
 				407792692284D41F000B6B77 /* ProductCondition.swift in Sources */,
 				40E50B8D228356E800349724 /* ProductDetailViewController.swift in Sources */,
+				4002E9892285E511001982F9 /* NSLayoutConstraint+Priority.swift in Sources */,
 				405298D12284C5BA00CC0A5B /* String+Substring.swift in Sources */,
 				40E50B5222834ACD00349724 /* AppDelegate.swift in Sources */,
 				40E50B9C228358C200349724 /* ProductListViewDelegate.swift in Sources */,
@@ -774,6 +792,8 @@
 				40E50B852283560A00349724 /* ApplicationCoordinator.swift in Sources */,
 				4020BD6222838C420003E11D /* ResponseError.swift in Sources */,
 				40E50B892283568400349724 /* ProductListCoordinator.swift in Sources */,
+				4002E9832285D6E4001982F9 /* ProductViewState.swift in Sources */,
+				4002E9872285D858001982F9 /* ProductViewStateView.swift in Sources */,
 				40E50B7E2283549F00349724 /* ProductService.swift in Sources */,
 				4020BD5E228384710003E11D /* ErrorPresenter.swift in Sources */,
 				405298CD2284B45800CC0A5B /* UIColor.swift in Sources */,
@@ -791,7 +811,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40A9D2D12284855D0052C375 /* BaseTest.swift in Sources */,
-				406194472283B36100B2DC66 /* KIFUITestActor.swift in Sources */,
+				406194472283B36100B2DC66 /* Quick+KIF.swift in Sources */,
 				4020BD5B228371990003E11D /* ProductMock.swift in Sources */,
 				4020BD6522839E2D0003E11D /* ProductListCoordinatorRobot.swift in Sources */,
 				406194492283B3A100B2DC66 /* BaseRobot.swift in Sources */,

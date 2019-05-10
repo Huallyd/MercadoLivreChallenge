@@ -33,10 +33,20 @@ final class ProductListViewController: UIViewController {
         return dataSource
     }()
 
+    private let stateView: ProductViewStateView = ProductViewStateView(viewState: .initial)
+
     private let tableView: UITableView = {
         let tableView = UITableView()
+        tableView.isHidden = true
 
         return tableView
+    }()
+
+    private lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [stateView, tableView])
+        stackView.axis = .vertical
+
+        return stackView
     }()
 
     private let gateway: ProductGateway
@@ -83,11 +93,11 @@ final class ProductListViewController: UIViewController {
             searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
 
-        view.addSubview(tableView, constraints: [
-            tableView.topAnchor.constraint(equalTo: searchBar.bottomAnchor),
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        view.addSubview(stackView, constraints: [
+            stackView.topAnchor.constraint(equalTo: searchBar.bottomAnchor),
+            stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
 
@@ -116,13 +126,21 @@ extension ProductListViewController: UISearchBarDelegate {
 extension ProductListViewController: GetProductSearchPresenter {
     func show(products: [ProductViewModel]) {
         dataSource.setup(products: products)
+        tableView.isHidden = false
+        stateView.isHidden = true
     }
 
     func show(error: Error) {
-        
+        stateView.update(viewState: .error(description: error.localizedDescription))
+        dataSource.setup(products: [])
+        tableView.isHidden = true
+        stateView.isHidden = false
     }
 
     func showEmpty() {
-
+        stateView.update(viewState: .empty)
+        dataSource.setup(products: [])
+        tableView.isHidden = true
+        stateView.isHidden = false
     }
 }

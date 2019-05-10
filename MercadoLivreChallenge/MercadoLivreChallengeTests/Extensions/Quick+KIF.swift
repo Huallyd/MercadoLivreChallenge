@@ -1,5 +1,5 @@
 //
-//  KIFUITestActor.swift
+//  Quick+KIF.swift
 //  MercadoLivreChallengeTests
 //
 //  Created by Huallyd Smadi on 08/05/19.
