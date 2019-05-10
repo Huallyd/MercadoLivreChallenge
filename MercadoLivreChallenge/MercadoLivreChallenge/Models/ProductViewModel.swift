@@ -12,13 +12,15 @@ import UIKit
 struct ProductViewModel {
     let title: String
     let price: String
+    let currency: String
     let thumbnail: URL
     let soldQuantity: String
     let condition: String
 
     init(product: Product) {
         title = product.title
-        price = String(format: "\(product.currencyId) %.02f", product.price)
+        price = String(format: "%.02f", product.price)
+        currency = "\(product.currencyId)"
         thumbnail = product.thumbnail
         soldQuantity = "\(product.soldQuantity)"
         condition = product.condition.rawValue

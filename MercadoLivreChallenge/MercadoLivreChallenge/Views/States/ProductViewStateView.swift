@@ -20,7 +20,7 @@ final class ProductViewStateView: UIView {
 
     private let subtitleLabel: UILabel = {
         let label = UILabel()
-        label.font = .boldSystemFont(ofSize: 16)
+        label.font = .systemFont(ofSize: 16)
         label.textAlignment = .center
         label.numberOfLines = 0
 
@@ -57,7 +57,7 @@ final class ProductViewStateView: UIView {
     }
 
     private func setupView() {
-        backgroundColor = .white
+        backgroundColor = .silver
     }
 
     private func setupLayout() {

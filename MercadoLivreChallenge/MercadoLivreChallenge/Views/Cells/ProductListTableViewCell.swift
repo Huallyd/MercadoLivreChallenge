@@ -75,7 +75,7 @@ final class ProductListTableViewCell: UITableViewCell, Reusable {
 
     func setup(viewModel: ProductViewModel) {
         titleLabel.text = viewModel.title
-        priceLabel.text = viewModel.price
+        priceLabel.text = "\(viewModel.currency) \(viewModel.price)"
         conditionLabel.text = viewModel.condition
         productImageView.kf.setImage(with: viewModel.thumbnail,
                                      placeholder: UIImage(named: "placeholder_product"))

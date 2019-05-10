@@ -41,7 +41,8 @@ final class ProductDetailViewController: UIViewController {
         return label
     }()
 
-    private lazy var priceLabel = PriceLabelFactory.make(text: viewModel.price)
+    private lazy var priceLabel = PriceLabelFactory.make(currency: viewModel.currency,
+                                                         price: viewModel.price)
 
     private let viewModel: ProductViewModel
 
@@ -69,7 +70,7 @@ final class ProductDetailViewController: UIViewController {
     // MARK: Private functions
 
     private func setupView() {
-        view.backgroundColor = .lightgray
+        view.backgroundColor = .silver
     }
 
     private func setupLayout() {
@@ -87,17 +88,18 @@ final class ProductDetailViewController: UIViewController {
             productImageView.bottomAnchor.constraint(equalTo: containerImageView.bottomAnchor, constant: -10)
         ])
 
+        view.addSubview(soldQuantityLabel, constraints: [
+            soldQuantityLabel.topAnchor.constraint(equalTo: containerImageView.bottomAnchor, constant: 20),
+            soldQuantityLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            soldQuantityLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+        ])
+
         view.addSubview(titleLabel, constraints: [
             titleLabel.topAnchor.constraint(equalTo: containerImageView.bottomAnchor, constant: 20),
             titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
-//
-//        view.addSubview(soldQuantityLabel, constraints: [
-//            
-//
-//        ])
         
         view.addSubview(priceLabel, constraints: [
             priceLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
