@@ -25,7 +25,12 @@ final class ProductListTableViewCell: UITableViewCell, Reusable {
         return label
     }()
 
-    private let priceLabel = UILabel()
+    private let priceLabel: UILabel = {
+        let label = UILabel()
+        label.font = .boldSystemFont(ofSize: 14)
+
+        return label
+    }()
 
     private let conditionLabel: UILabel = {
         let label = UILabel()
@@ -70,7 +75,7 @@ final class ProductListTableViewCell: UITableViewCell, Reusable {
 
     func setup(viewModel: ProductViewModel) {
         titleLabel.text = viewModel.title
-        priceLabel.attributedText = viewModel.price
+        priceLabel.text = viewModel.price
         conditionLabel.text = viewModel.condition
         productImageView.kf.setImage(with: viewModel.thumbnail)
     }

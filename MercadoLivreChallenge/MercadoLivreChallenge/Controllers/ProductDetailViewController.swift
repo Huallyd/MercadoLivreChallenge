@@ -9,32 +9,48 @@
 import UIKit
 
 final class ProductDetailViewController: UIViewController {
-    private let productImageView: UIImageView = {
-        let imageView = UIImageView()
+    private lazy var productImageView: RoundImage = {
+        let imageView = RoundImage()
         imageView.contentMode = .scaleAspectFit
+        imageView.kf.setImage(with: viewModel.thumbnail)
 
         return imageView
     }()
 
-    private let titleLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let label = UILabel()
+        label.text = viewModel.title
+        label.font = .boldSystemFont(ofSize: 20)
         label.numberOfLines = 0
+        label.textAlignment = .center
 
         return label
     }()
 
-    private let priceLabel: UILabel = {
+    private let containerImageView: RoundImage = {
+        let view = RoundImage()
+        view.backgroundColor = .white
+
+        return view
+    }()
+
+    private lazy var soldQuantityLabel: UILabel = {
         let label = UILabel()
+        label.text = viewModel.soldQuantity
 
         return label
     }()
+
+    private lazy var priceLabel = PriceLabelFactory.make(text: viewModel.price)
+
+    private let viewModel: ProductViewModel
 
     // MARK: Initialize
 
     init(viewModel: ProductViewModel) {
-        super.init(nibName: nil, bundle: nil)
+        self.viewModel = viewModel
 
-        setup(viewModel: viewModel)
+        super.init(nibName: nil, bundle: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -52,33 +68,39 @@ final class ProductDetailViewController: UIViewController {
 
     // MARK: Private functions
 
-    private func setup(viewModel: ProductViewModel) {
-        titleLabel.text = viewModel.title
-        priceLabel.text = "\(viewModel.price)"
-        productImageView.kf.setImage(with: viewModel.thumbnail)
-    }
-
     private func setupView() {
-        view.backgroundColor = .white
+        view.backgroundColor = .spaceGray
     }
 
     private func setupLayout() {
+        view.addSubview(containerImageView, constraints: [
+            containerImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
+            containerImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            containerImageView.heightAnchor.constraint(equalToConstant: 130),
+            containerImageView.widthAnchor.constraint(equalToConstant: 130)
+        ])
+
         view.addSubview(productImageView, constraints: [
-            productImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            productImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            productImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            productImageView.heightAnchor.constraint(equalToConstant: 80)
+            productImageView.topAnchor.constraint(equalTo: containerImageView.topAnchor, constant: 10),
+            productImageView.leadingAnchor.constraint(equalTo: containerImageView.leadingAnchor, constant: 10),
+            productImageView.trailingAnchor.constraint(equalTo: containerImageView.trailingAnchor, constant: -10),
+            productImageView.bottomAnchor.constraint(equalTo: containerImageView.bottomAnchor, constant: -10)
         ])
 
         view.addSubview(titleLabel, constraints: [
-            titleLabel.topAnchor.constraint(equalTo: productImageView.bottomAnchor, constant: 20),
-            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
-            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 12)
+            titleLabel.topAnchor.constraint(equalTo: containerImageView.bottomAnchor, constant: 20),
+            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
-
+//
+//        view.addSubview(soldQuantityLabel, constraints: [
+//            
+//
+//        ])
         view.addSubview(priceLabel, constraints: [
             priceLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
-            priceLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor)
+            priceLabel.centerXAnchor.constraint(equalTo: titleLabel.centerXAnchor)
         ])
     }
 }

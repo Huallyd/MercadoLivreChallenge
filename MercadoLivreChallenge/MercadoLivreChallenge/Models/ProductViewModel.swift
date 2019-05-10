@@ -11,26 +11,16 @@ import UIKit
 
 struct ProductViewModel {
     let title: String
-    let price: NSAttributedString
+    let price: String
     let thumbnail: URL
+    let soldQuantity: String
     let condition: String
 
     init(product: Product) {
         title = product.title
+        price = String(format: "\(product.currencyId) %.02f", product.price)
         thumbnail = product.thumbnail
+        soldQuantity = "\(product.soldQuantity)"
         condition = product.condition.rawValue
-
-        let formattedPrice = String(format: "%.02f", product.price)
-
-        let intValue = formattedPrice.substring(toIndex: formattedPrice.count - 3)
-        let cents = formattedPrice.substring(fromIndex: intValue.count)
-
-        let configuration: [LabelConfiguration] = [
-            (text: "\(product.currencyId) ", font: .boldSystemFont(ofSize: 14), color: .black),
-            (text: "\(intValue)", font: .boldSystemFont(ofSize: 14), color: .black),
-            (text: cents, font: .boldSystemFont(ofSize: 10), color: .black)
-        ]
-
-        price = NSMutableAttributedString(labelConfigurations: configuration)
     }
 }
