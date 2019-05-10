@@ -12,7 +12,10 @@ final class ProductListCoordinator {
     private var productDetailCordinator: ProductDetailCoordinator?
 
     private lazy var productListViewController: ProductListViewController = {
-        return ProductListViewController(gateway: gateway, delegate: self)
+        let viewController = ProductListViewController(gateway: gateway, delegate: self)
+        viewController.title = "Produtos"
+
+        return viewController
     }()
 
     private let navigationController: UINavigationController

@@ -9,12 +9,19 @@
 import UIKit
 
 final class ProductDetailCoordinator {
+    private lazy var productDetailViewController: ProductDetailViewController = {
+        let viewController = ProductDetailViewController(viewModel: viewModel)
+        viewController.title = "Detalhe"
+
+        return viewController
+    }()
+
     private let navigationController: UINavigationController
-    private let productDetailViewController: ProductDetailViewController
+    private let viewModel: ProductViewModel
 
     init(navigationController: UINavigationController, viewModel: ProductViewModel) {
         self.navigationController = navigationController
-        self.productDetailViewController = ProductDetailViewController(viewModel: viewModel)
+        self.viewModel = viewModel
     }
 }
 

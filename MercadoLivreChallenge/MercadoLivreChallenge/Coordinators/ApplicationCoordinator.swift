@@ -24,6 +24,7 @@ final class ApplicationCoordinator {
 
     private func setupNavigationView() {
         rootNavigationViewController.navigationBar.barTintColor = .gem
+        rootNavigationViewController.navigationBar.prefersLargeTitles = true
     }
 }
 
@@ -31,6 +32,7 @@ extension ApplicationCoordinator: Coordinator {
     func start() {
         window.rootViewController = rootNavigationViewController
         window.makeKeyAndVisible()
+        
 
         ProductListCoordinator(navigationController: rootNavigationViewController,
                                gateway: gateway).start()
