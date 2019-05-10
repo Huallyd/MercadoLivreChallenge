@@ -10,10 +10,14 @@ final class GetProductSearchUseCase {
     private let gateway: ProductGateway
     private unowned let presenter: GetProductSearchPresenter
 
+    // MARK: Initializer
+
     init(gateway: ProductGateway, presenter: GetProductSearchPresenter) {
         self.gateway = gateway
         self.presenter = presenter
     }
+
+    // MARK: Private Function
 
     private func onSuccess(products: [Product]) {
         guard !products.isEmpty else {
@@ -22,6 +26,8 @@ final class GetProductSearchUseCase {
 
         presenter.show(products: products.map(ProductViewModel.init))
     }
+
+    // MARK: Function
 
     func search(searchString: String) {
         gateway.searchProducts(searchString) { [weak self] result in

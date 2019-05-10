@@ -27,7 +27,7 @@
 		406194472283B36100B2DC66 /* KIFUITestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406194462283B36100B2DC66 /* KIFUITestActor.swift */; };
 		406194492283B3A100B2DC66 /* BaseRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406194482283B3A100B2DC66 /* BaseRobot.swift */; };
 		407792692284D41F000B6B77 /* ProductCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407792682284D41F000B6B77 /* ProductCondition.swift */; };
-		4077926B2284EA1A000B6B77 /* UIImageView + Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4077926A2284EA1A000B6B77 /* UIImageView + Rounded.swift */; };
+		4077926B2284EA1A000B6B77 /* UIImageView+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4077926A2284EA1A000B6B77 /* UIImageView+Rounded.swift */; };
 		4077926F2284FDF4000B6B77 /* PriceLabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4077926E2284FDF4000B6B77 /* PriceLabelFactory.swift */; };
 		40A9D2D12284855D0052C375 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D2D02284855D0052C375 /* BaseTest.swift */; };
 		40E50B5222834ACD00349724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50B5122834ACD00349724 /* AppDelegate.swift */; };
@@ -96,7 +96,7 @@
 		406194462283B36100B2DC66 /* KIFUITestActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUITestActor.swift; sourceTree = "<group>"; };
 		406194482283B3A100B2DC66 /* BaseRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRobot.swift; sourceTree = "<group>"; };
 		407792682284D41F000B6B77 /* ProductCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCondition.swift; sourceTree = "<group>"; };
-		4077926A2284EA1A000B6B77 /* UIImageView + Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Rounded.swift"; sourceTree = "<group>"; };
+		4077926A2284EA1A000B6B77 /* UIImageView+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Rounded.swift"; sourceTree = "<group>"; };
 		4077926E2284FDF4000B6B77 /* PriceLabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLabelFactory.swift; sourceTree = "<group>"; };
 		40A9D2D02284855D0052C375 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
 		40E50B4E22834ACD00349724 /* MercadoLivreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLivreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,7 +242,7 @@
 				40E50B93228357B500349724 /* Views */,
 				40E50BA22283599900349724 /* Presenters */,
 				40E50BA12283598B00349724 /* UseCases */,
-				40E50B972283580A00349724 /* Utils */,
+				40E50B972283580A00349724 /* Common */,
 				40E50B5122834ACD00349724 /* AppDelegate.swift */,
 				40E50B5822834AD000349724 /* Assets.xcassets */,
 				40E50B5A22834AD000349724 /* LaunchScreen.storyboard */,
@@ -346,7 +346,7 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		40E50B972283580A00349724 /* Utils */ = {
+		40E50B972283580A00349724 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				40E50B982283585200349724 /* UIView+Constraints.swift */,
@@ -355,9 +355,9 @@
 				405298CC2284B45800CC0A5B /* UIColor.swift */,
 				405298CE2284C34400CC0A5B /* NSMutableAttributedString+LabelConfiguration.swift */,
 				405298D02284C5BA00CC0A5B /* String+Substring.swift */,
-				4077926A2284EA1A000B6B77 /* UIImageView + Rounded.swift */,
+				4077926A2284EA1A000B6B77 /* UIImageView+Rounded.swift */,
 			);
-			path = Utils;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		40E50B9A228358A300349724 /* Delegate */ = {
@@ -771,7 +771,7 @@
 				405298CD2284B45800CC0A5B /* UIColor.swift in Sources */,
 				40E50B8B228356A300349724 /* ProductDetailCoordinator.swift in Sources */,
 				40E50B9E2283590E00349724 /* Reusable.swift in Sources */,
-				4077926B2284EA1A000B6B77 /* UIImageView + Rounded.swift in Sources */,
+				4077926B2284EA1A000B6B77 /* UIImageView+Rounded.swift in Sources */,
 				40E50B82228355E000349724 /* ProductListViewController.swift in Sources */,
 				40E50B7622834F7700349724 /* Product.swift in Sources */,
 				4020BD602283847B0003E11D /* EmptyPresenter.swift in Sources */,

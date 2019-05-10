@@ -22,7 +22,7 @@ struct Product {
 
         id = try container.decode(String.self, forKey: .id)
         title = try container.decode(String.self, forKey: .title)
-        price = (try? container.decode(Double.self, forKey: .price)) ?? 0.00
+        price = (try? container.decode(Double.self, forKey: .price)) ?? 0
         thumbnail = try container.decode(URL.self, forKey: .thumbnail)
         currencyId = (try? container.decode(String.self, forKey: .currencyId)) ?? ""
         soldQuantity = try container.decode(Double.self, forKey: .soldQuantity)

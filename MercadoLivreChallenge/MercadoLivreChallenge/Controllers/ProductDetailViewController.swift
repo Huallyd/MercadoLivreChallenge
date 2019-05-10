@@ -69,7 +69,7 @@ final class ProductDetailViewController: UIViewController {
     // MARK: Private functions
 
     private func setupView() {
-        view.backgroundColor = .spaceGray
+        view.backgroundColor = .lightgray
     }
 
     private func setupLayout() {
@@ -98,6 +98,7 @@ final class ProductDetailViewController: UIViewController {
 //            
 //
 //        ])
+        
         view.addSubview(priceLabel, constraints: [
             priceLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
             priceLabel.centerXAnchor.constraint(equalTo: titleLabel.centerXAnchor)

@@ -17,7 +17,7 @@ final class ProductListViewController: UIViewController {
         let searchBar = UISearchBar()
         searchBar.delegate = self
         searchBar.accessibilityLabel = "Search Bar"
-        searchBar.barTintColor = .gem
+        searchBar.barTintColor = .lightYellow
 
         return searchBar
     }()
@@ -67,9 +67,7 @@ final class ProductListViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
-        if let indexPath = tableView.indexPathForSelectedRow {
-            tableView.deselectRow(at: indexPath, animated: true)
-        }
+        deselectRow()
     }
 
     // MARK: Private functions
@@ -91,6 +89,14 @@ final class ProductListViewController: UIViewController {
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+    }
+
+    private func deselectRow() {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+
+        view.endEditing(true)
     }
 
     private func didSelect(viewModel: ProductViewModel) {

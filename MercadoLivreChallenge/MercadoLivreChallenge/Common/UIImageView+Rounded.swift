@@ -1,5 +1,5 @@
 //
-//  UIImageView + Rounded.swift
+//  UIImageView+Rounded.swift
 //  MercadoLivreChallenge
 //
 //  Created by Huallyd Smadi on 09/05/19.

@@ -23,7 +23,7 @@ final class ApplicationCoordinator {
     }
 
     private func setupNavigationView() {
-        rootNavigationViewController.navigationBar.barTintColor = .gem
+        rootNavigationViewController.navigationBar.barTintColor = .lightYellow
         rootNavigationViewController.navigationBar.prefersLargeTitles = true
     }
 }

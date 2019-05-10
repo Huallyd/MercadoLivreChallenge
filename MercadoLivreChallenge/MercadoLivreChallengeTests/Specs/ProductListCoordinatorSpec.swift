@@ -24,7 +24,7 @@ final class ProductListCoordinatorSpec: BaseTest {
             it("should appear list of products") {
                 ProductListCoordinatorRobotFactory
                     .make(self).load(gateway: gateway)
-                    .search(text: "play")
+                    .search(text: "Play")
                     .result()
                     .checkList()
             }

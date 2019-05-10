@@ -77,7 +77,8 @@ final class ProductListTableViewCell: UITableViewCell, Reusable {
         titleLabel.text = viewModel.title
         priceLabel.text = viewModel.price
         conditionLabel.text = viewModel.condition
-        productImageView.kf.setImage(with: viewModel.thumbnail)
+        productImageView.kf.setImage(with: viewModel.thumbnail,
+                                     placeholder: UIImage(named: "placeholder_product"))
     }
 }
 
