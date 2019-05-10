@@ -15,12 +15,12 @@ final class PriceLabelFactory {
         let intValue = text.substring(toIndex: text.count - 3)
         let cents = text.substring(fromIndex: intValue.count)
 
-        let configuration: [LabelConfiguration] = [
+        let configurations: [LabelConfiguration] = [
             (text: "\(intValue)", font: .boldSystemFont(ofSize: 20), color: .black),
             (text: cents, font: .boldSystemFont(ofSize: 16), color: .black)
         ]
 
-        label.attributedText =  NSMutableAttributedString(labelConfigurations: configuration)
+        label.attributedText =  NSMutableAttributedString(configurations: configurations)
 
         return label
     }

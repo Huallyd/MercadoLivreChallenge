@@ -17,23 +17,32 @@ final class GetProductSearchUseCase {
         self.presenter = presenter
     }
 
-    // MARK: Private Function
+    // MARK: Private Functions
 
     private func onSuccess(products: [Product]) {
-        guard !products.isEmpty else {
-            return presenter.showEmpty()
+        if !products.isEmpty {
+            presenter.show(products: products.map(ProductViewModel.init))
+        } else {
+            presenter.showEmpty()
         }
 
-        presenter.show(products: products.map(ProductViewModel.init))
+        presenter.removeLoading()
+    }
+
+    private func onError(error: Error) {
+        presenter.show(error: error)
+        presenter.removeLoading()
     }
 
     // MARK: Function
 
     func search(searchString: String) {
+        presenter.showLoading()
+
         gateway.searchProducts(searchString) { [weak self] result in
             switch result {
             case let .success(products): self?.onSuccess(products: products)
-            case let .failure(error): self?.presenter.show(error: error)
+            case let .failure(error): self?.onError(error: error)
             }
         }
     }

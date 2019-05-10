@@ -6,6 +6,6 @@
 //  Copyright © 2019 Huallyd Smadi. All rights reserved.
 //
 
-protocol GetProductSearchPresenter: EmptyPresenter, ErrorPresenter {
+protocol GetProductSearchPresenter: EmptyPresenter, ErrorPresenter, LoadingPresenter {
     func show(products: [ProductViewModel])
 }

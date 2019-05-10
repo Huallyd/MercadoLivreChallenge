@@ -12,10 +12,10 @@ import UIKit
 typealias LabelConfiguration = (text: String, font: UIFont, color: UIColor)
 
 extension NSMutableAttributedString {
-    convenience init(labelConfigurations: [LabelConfiguration]) {
+    convenience init(configurations: [LabelConfiguration]) {
         self.init()
         
-        labelConfigurations.forEach {
+        configurations.forEach {
             append(NSAttributedString(string: $0.text, attributes: [.font: $0.font,
                                                                     .foregroundColor: $0.color]))
 

@@ -9,8 +9,15 @@
 import UIKit
 
 final class ProductDetailViewController: UIViewController {
-    private lazy var productImageView: RoundImage = {
-        let imageView = RoundImage()
+    private let containerImageView: RoundImageView = {
+        let view = RoundImageView(cornerRadius: 22)
+        view.backgroundColor = .white
+
+        return view
+    }()
+    
+    private lazy var productImageView: RoundImageView = {
+        let imageView = RoundImageView(cornerRadius: 22)
         imageView.contentMode = .scaleAspectFit
         imageView.kf.setImage(with: viewModel.thumbnail)
 
@@ -25,13 +32,6 @@ final class ProductDetailViewController: UIViewController {
         label.textAlignment = .center
 
         return label
-    }()
-
-    private let containerImageView: RoundImage = {
-        let view = RoundImage()
-        view.backgroundColor = .white
-
-        return view
     }()
 
     private lazy var soldQuantityLabel: UILabel = {
