@@ -33,11 +33,27 @@ final class GetProductSearchPresenterSpy: GetProductSearchPresenter {
     private(set) var invokedShowErrorCount = 0
     private(set) var invokedShowErrorParameters: (error: Error, Void)?
     private(set) var invokedShowErrorParametersList = [(error: Error, Void)]()
-    
+
     func show(error: Error) {
         invokedShowError = true
         invokedShowErrorCount += 1
         invokedShowErrorParameters = (error, ())
         invokedShowErrorParametersList.append((error, ()))
+    }
+
+    private(set) var invokedShowLoading = false
+    private(set) var invokedShowLoadingCount = 0
+
+    func showLoading() {
+        invokedShowLoading = true
+        invokedShowLoadingCount += 1
+    }
+
+    private(set) var invokedRemoveLoading = false
+    private(set) var invokedRemoveLoadingCount = 0
+    
+    func removeLoading() {
+        invokedRemoveLoading = true
+        invokedRemoveLoadingCount += 1
     }
 }

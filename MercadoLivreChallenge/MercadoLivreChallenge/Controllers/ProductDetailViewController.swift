@@ -71,7 +71,7 @@ final class ProductDetailViewController: UIViewController {
     // MARK: Private functions
 
     private func setupView() {
-        view.backgroundColor = .silver
+        view.backgroundColor = .white
     }
 
     private func setupLayout() {

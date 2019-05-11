@@ -11,7 +11,7 @@
         {
             "id": "MLU445999857",
             "site_id": "MLU",
-            "title": "Ps3 500gb + 2 Joystick+ 50 Juegos Originales Con Fifa 19  ",
+            "title": "Playstation 3",
             "seller": {
                 "id": 221060036,
                 "power_seller_status": "platinum",
@@ -118,7 +118,7 @@
         {
             "id": "MLU462828412",
             "site_id": "MLU",
-            "title": "Consola Ps4 + Fifa 2019 + Control Adicional",
+            "title": "Playstation 4",
             "seller": {
                 "id": 347612137,
                 "power_seller_status": "platinum",
@@ -126,14 +126,14 @@
                 "real_estate_agency": false,
                 "tags": []
             },
-            "price": 629,
+            "price": 629.9,
             "currency_id": "USD",
             "available_quantity": 1,
-            "sold_quantity": 5,
+            "sold_quantity": 0,
             "buying_mode": "buy_it_now",
             "listing_type_id": "gold_special",
             "stop_time": "2039-04-23T04:00:00.000Z",
-            "condition": "new",
+            "condition": "not_specified",
             "permalink": "https://articulo.mercadolibre.com.uy/MLU-462828412-consola-ps4-fifa-2019-control-adicional-_JM",
             "thumbnail": "http://image.com",
             "accepts_mercadopago": true,
@@ -202,7 +202,7 @@
         {
             "id": "MLU459550770",
             "site_id": "MLU",
-            "title": "Ps2 +7700 Juegos +5 A Elección+2joystick +envio Gratis ",
+            "title": "Playstation 2",
             "seller": {
                 "id": 221060036,
                 "power_seller_status": "platinum",
