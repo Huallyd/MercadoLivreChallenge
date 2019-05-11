@@ -22,5 +22,3 @@ extension LoadingPresenter where Self: UIViewController {
         view.unload()
     }
 }
-
-

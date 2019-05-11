@@ -14,7 +14,7 @@ struct Product {
     let price: Double
     let thumbnail: URL
     let currencyId: String
-    let soldQuantity: Double
+    let soldQuantity: Int
     let condition: CoditionProduct
 
     init(from decoder: Decoder) throws {
@@ -25,7 +25,7 @@ struct Product {
         price = (try? container.decode(Double.self, forKey: .price)) ?? 0
         thumbnail = try container.decode(URL.self, forKey: .thumbnail)
         currencyId = (try? container.decode(String.self, forKey: .currencyId)) ?? ""
-        soldQuantity = try container.decode(Double.self, forKey: .soldQuantity)
+        soldQuantity = try container.decode(Int.self, forKey: .soldQuantity)
         condition = CoditionProduct(rawValue: try container.decode(String.self, forKey: .condition)) ?? .notSpecified
     }
 }
@@ -37,8 +37,8 @@ extension Product: Decodable {
         case price
         case thumbnail
         case currencyId = "currency_id"
-        case condition
         case soldQuantity = "sold_quantity"
+        case condition
     }
 }
 

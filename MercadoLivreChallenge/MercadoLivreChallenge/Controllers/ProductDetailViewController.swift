@@ -34,9 +34,10 @@ final class ProductDetailViewController: UIViewController {
         return label
     }()
 
-    private lazy var soldQuantityLabel: UILabel = {
+    private lazy var statusLabel: UILabel = {
         let label = UILabel()
-        label.text = viewModel.soldQuantity
+        label.text = viewModel.status
+        label.font = .systemFont(ofSize: 12)
 
         return label
     }()
@@ -88,14 +89,13 @@ final class ProductDetailViewController: UIViewController {
             productImageView.bottomAnchor.constraint(equalTo: containerImageView.bottomAnchor, constant: -10)
         ])
 
-        view.addSubview(soldQuantityLabel, constraints: [
-            soldQuantityLabel.topAnchor.constraint(equalTo: containerImageView.bottomAnchor, constant: 20),
-            soldQuantityLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-            soldQuantityLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+        view.addSubview(statusLabel, constraints: [
+            statusLabel.topAnchor.constraint(equalTo: containerImageView.bottomAnchor, constant: 20),
+            statusLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
 
         view.addSubview(titleLabel, constraints: [
-            titleLabel.topAnchor.constraint(equalTo: containerImageView.bottomAnchor, constant: 20),
+            titleLabel.topAnchor.constraint(equalTo: statusLabel.bottomAnchor, constant: 20),
             titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
