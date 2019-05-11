@@ -109,6 +109,11 @@ final class ProductListViewController: UIViewController {
         view.endEditing(true)
     }
 
+    private func showTableView(_ show: Bool) {
+        tableView.isHidden = !show
+        stateView.isHidden = show
+    }
+
     private func didSelect(viewModel: ProductViewModel) {
         delegate.didSelect(product: viewModel)
     }
@@ -126,21 +131,18 @@ extension ProductListViewController: UISearchBarDelegate {
 extension ProductListViewController: GetProductSearchPresenter {
     func show(products: [ProductViewModel]) {
         dataSource.setup(products: products)
-        tableView.isHidden = false
-        stateView.isHidden = true
+        showTableView(true)
     }
 
     func show(error: Error) {
         stateView.update(viewState: .error(description: error.localizedDescription))
         dataSource.setup(products: [])
-        tableView.isHidden = true
-        stateView.isHidden = false
+        showTableView(false)
     }
 
     func showEmpty() {
         stateView.update(viewState: .empty)
         dataSource.setup(products: [])
-        tableView.isHidden = true
-        stateView.isHidden = false
+        showTableView(false)
     }
 }
