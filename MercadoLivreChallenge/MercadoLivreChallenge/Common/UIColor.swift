@@ -14,6 +14,6 @@ extension UIColor {
     }
 
     class var silver: UIColor {
-        return UIColor(red: 211 / 255, green: 211 / 255, blue: 211 / 255, alpha: 1.0)
+        return UIColor(red: 241 / 255, green: 241 / 255, blue: 241 / 255, alpha: 1.0)
     }
 }

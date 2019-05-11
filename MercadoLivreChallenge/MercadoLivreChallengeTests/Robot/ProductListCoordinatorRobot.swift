@@ -42,13 +42,40 @@ final class ProductListCoordinatorRobot: BaseRobot {
 }
 
 final class ProductListCoordinatorResult: BaseRobot {
-    let label = "Search List"
+    let viewLabel = "Search List"
 
     @discardableResult
-    func checkList() -> ProductListCoordinatorResult {
-        let productList: UIView = tester.waitForView(withAccessibilityLabel: label)
-    
-        expect(productList) == recordSnapshot("product_list")
+    func checkInitialStateList() -> ProductListCoordinatorResult {
+        let productList: UIView = tester.waitForView(withAccessibilityLabel: viewLabel)
+
+        expect(productList) == snapshot("product_list_initial_state")
+
+        return self
+    }
+
+    @discardableResult
+    func checkProductList() -> ProductListCoordinatorResult {
+        let productList: UIView = tester.waitForView(withAccessibilityLabel: viewLabel)
+
+        expect(productList) == snapshot("product_list")
+
+        return self
+    }
+
+    @discardableResult
+    func checkEmptyStateList() -> ProductListCoordinatorResult {
+        let productList: UIView = tester.waitForView(withAccessibilityLabel: viewLabel)
+
+        expect(productList) == snapshot("product_list_empty_state")
+
+        return self
+    }
+
+    @discardableResult
+    func checkErrorStateList() -> ProductListCoordinatorResult {
+        let productList: UIView = tester.waitForView(withAccessibilityLabel: viewLabel)
+
+        expect(productList) == snapshot("product_list_error_state")
 
         return self
     }

@@ -19,7 +19,8 @@ final class ProductDetailViewController: UIViewController {
     private lazy var productImageView: RoundImageView = {
         let imageView = RoundImageView(cornerRadius: 22)
         imageView.contentMode = .scaleAspectFit
-        imageView.kf.setImage(with: viewModel.thumbnail)
+        imageView.kf.setImage(with: viewModel.thumbnail,
+                              placeholder: UIImage(named: "placeholder_product"))
 
         return imageView
     }()
@@ -71,7 +72,7 @@ final class ProductDetailViewController: UIViewController {
     // MARK: Private functions
 
     private func setupView() {
-        view.backgroundColor = .white
+        view.backgroundColor = .silver
     }
 
     private func setupLayout() {

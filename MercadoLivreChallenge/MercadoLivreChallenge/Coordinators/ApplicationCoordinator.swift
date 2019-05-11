@@ -25,6 +25,7 @@ final class ApplicationCoordinator {
     private func setupNavigationView() {
         rootNavigationViewController.navigationBar.barTintColor = .lightYellow
         rootNavigationViewController.navigationBar.prefersLargeTitles = true
+        rootNavigationViewController.view.accessibilityLabel = "Navigation Application"
     }
 }
 

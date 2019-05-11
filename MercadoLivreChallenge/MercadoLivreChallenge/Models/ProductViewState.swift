@@ -17,7 +17,7 @@ enum ProductViewState {
         switch self {
         case .initial: return "Olá! :)"
         case .empty: return "Infelizmente não achamos o que você procura :("
-        case .error: return "Ops, ocorreu um erro."
+        case .error: return "Ops, ocorreu um erro :("
         }
     }
 
