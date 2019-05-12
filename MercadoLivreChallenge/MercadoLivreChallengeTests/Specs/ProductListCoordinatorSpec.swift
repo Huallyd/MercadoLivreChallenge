@@ -25,7 +25,7 @@ final class ProductListCoordinatorSpec: BaseTest {
     }
 
     func setupError() {
-        self.gateway = ProductGatewayMock(error: ResponseError.badRequest)
+        self.gateway = ProductGatewayMock(error: ResponseError.failed)
         self.robot = ProductListCoordinatorRobotFactory.make(self).load(gateway: self.gateway)
     }
     
