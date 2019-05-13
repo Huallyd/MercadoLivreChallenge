@@ -14,7 +14,7 @@ enum ProductService {
 
 extension ProductService: TargetType {
     var baseURL: URL {
-        guard let url = URL(string: "https://api.mercadolibre.com/sites/MLU/") else {
+        guard let url = URL(string: R.string.apI.baseUrl()) else {
             fatalError("baseURL could not be configured")
         }
 
@@ -23,7 +23,7 @@ extension ProductService: TargetType {
 
     var path: String {
         switch self {
-        case .search: return "search"
+        case .search: return R.string.apI.searchPath()
         }
     }
 
@@ -41,8 +41,9 @@ extension ProductService: TargetType {
 
     var task: Task {
         switch self {
-        case .search(let searchedString): return .requestParameters(parameters: ["q": searchedString],
-                                                                    encoding: URLEncoding.default)
+        case .search(let searchedString):
+            return .requestParameters(parameters: [R.string.apI.searchParameter(): searchedString],
+                                      encoding: URLEncoding.default)
         }
     }
 

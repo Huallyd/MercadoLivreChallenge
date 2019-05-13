@@ -1,0 +1,14 @@
+/* 
+  StateView.strings
+  MercadoLivreChallenge
+
+  Created by Huallyd Smadi on 13/05/19.
+  Copyright © 2019 Huallyd Smadi. All rights reserved.
+*/
+
+"titleInitial" = "Olá! :)";
+"titleEmpty" = "Infelizmente não achamos o que você procura :(";
+"titleError" = "Ops, ocorreu um erro :(";
+
+"subtitleInitial" = "O que procura? \n\n Basta digitar na barra de busca.";
+"subtitleEmpty" = "Tente novamente com outro produto.";

@@ -15,16 +15,16 @@ enum ProductViewState {
 
     var title: String {
         switch self {
-        case .initial: return "Olá! :)"
-        case .empty: return "Infelizmente não achamos o que você procura :("
-        case .error: return "Ops, ocorreu um erro :("
+        case .initial: return R.string.stateView.titleInitial()
+        case .empty: return R.string.stateView.titleEmpty()
+        case .error: return R.string.stateView.titleError()
         }
     }
 
     var subtitle: String {
         switch self {
-        case .initial: return "O que procura? \n\n Basta digitar na barra de busca."
-        case .empty: return "Tente novamente com outro produto."
+        case .initial: return R.string.stateView.subtitleInitial()
+        case .empty: return R.string.stateView.subtitleEmpty()
         case let .error(description): return description
         }
     }

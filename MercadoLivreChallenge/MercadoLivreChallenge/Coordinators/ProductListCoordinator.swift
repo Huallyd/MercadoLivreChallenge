@@ -13,7 +13,7 @@ final class ProductListCoordinator {
 
     private lazy var productListViewController: ProductListViewController = {
         let viewController = ProductListViewController(gateway: gateway, delegate: self)
-        viewController.title = "Produtos"
+        viewController.title = R.string.navigationBar.productList()
 
         return viewController
     }()

@@ -64,6 +64,12 @@
 		40E50BB82283632100349724 /* GetProductSearchUseCaseSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50BB72283632100349724 /* GetProductSearchUseCaseSpy.swift */; };
 		40E50BB92283632100349724 /* GetProductSearchUseCaseSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50BB72283632100349724 /* GetProductSearchUseCaseSpy.swift */; };
 		40E50BBC228363BD00349724 /* GetProductSearchUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E50BBB228363BD00349724 /* GetProductSearchUseCaseSpec.swift */; };
+		40F9BDE722892BCC001D7C31 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F9BDE622892BCC001D7C31 /* R.generated.swift */; };
+		40F9BDEA22893007001D7C31 /* NavigationBar.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40F9BDE922893007001D7C31 /* NavigationBar.strings */; };
+		40F9BDEC2289314E001D7C31 /* AccessibilityLabels.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40F9BDEB2289314E001D7C31 /* AccessibilityLabels.strings */; };
+		40F9BDEE22893325001D7C31 /* StateView.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40F9BDED22893325001D7C31 /* StateView.strings */; };
+		40F9BDF022893699001D7C31 /* ViewModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40F9BDEF22893699001D7C31 /* ViewModel.strings */; };
+		40F9BDF222893B23001D7C31 /* API.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40F9BDF122893B23001D7C31 /* API.strings */; };
 		4F3B6AF8210E1D92329782C5 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E96F0438CF9E92A85EB1E8B /* Pods_MercadoLivreChallenge_MercadoLivreChallengeTests.framework */; };
 		75E1FF92DAB65816442AAA5E /* Pods_MercadoLivreChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC129CC3098DB1BFD0BD2CA /* Pods_MercadoLivreChallenge.framework */; };
 		B02F85F1798D8AA367CDB2B3 /* Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8FCDF052F89697D3B6AF3FE /* Pods_MercadoLivreChallenge_MercadoLivreChallengeUnitTests.framework */; };
@@ -145,6 +151,12 @@
 		40E50BAF2283610400349724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E50BB72283632100349724 /* GetProductSearchUseCaseSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductSearchUseCaseSpy.swift; sourceTree = "<group>"; };
 		40E50BBB228363BD00349724 /* GetProductSearchUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductSearchUseCaseSpec.swift; sourceTree = "<group>"; };
+		40F9BDE622892BCC001D7C31 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		40F9BDE922893007001D7C31 /* NavigationBar.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = NavigationBar.strings; sourceTree = "<group>"; };
+		40F9BDEB2289314E001D7C31 /* AccessibilityLabels.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = AccessibilityLabels.strings; sourceTree = "<group>"; };
+		40F9BDED22893325001D7C31 /* StateView.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = StateView.strings; sourceTree = "<group>"; };
+		40F9BDEF22893699001D7C31 /* ViewModel.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ViewModel.strings; sourceTree = "<group>"; };
+		40F9BDF122893B23001D7C31 /* API.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = API.strings; sourceTree = "<group>"; };
 		5EC129CC3098DB1BFD0BD2CA /* Pods_MercadoLivreChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoLivreChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FDD89D77498D5405EA84B05 /* Pods-MercadoLivreChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge.release.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		76D5B35095DB8A432A4FA863 /* Pods-MercadoLivreChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLivreChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MercadoLivreChallenge/Pods-MercadoLivreChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +271,9 @@
 		40E50B5022834ACD00349724 /* MercadoLivreChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				40E50B5D22834AD000349724 /* Info.plist */,
+				40E50B5122834ACD00349724 /* AppDelegate.swift */,
+				40F9BDE422892B84001D7C31 /* Resource */,
 				40E50B83228355F700349724 /* Coordinators */,
 				40E50B7F228355B700349724 /* Controllers */,
 				40E50B902283575700349724 /* DataProvider */,
@@ -268,10 +283,6 @@
 				40E50BA22283599900349724 /* Presenters */,
 				40E50BA12283598B00349724 /* UseCases */,
 				40E50B972283580A00349724 /* Common */,
-				40E50B5122834ACD00349724 /* AppDelegate.swift */,
-				40E50B5822834AD000349724 /* Assets.xcassets */,
-				40E50B5A22834AD000349724 /* LaunchScreen.storyboard */,
-				40E50B5D22834AD000349724 /* Info.plist */,
 			);
 			path = MercadoLivreChallenge;
 			sourceTree = "<group>";
@@ -446,6 +457,37 @@
 			path = Specs;
 			sourceTree = "<group>";
 		};
+		40F9BDE422892B84001D7C31 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				40F9BDE822892FBD001D7C31 /* Strings */,
+				40E50B5822834AD000349724 /* Assets.xcassets */,
+				40E50B5A22834AD000349724 /* LaunchScreen.storyboard */,
+				40F9BDE522892B8B001D7C31 /* Generated */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		40F9BDE522892B8B001D7C31 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				40F9BDE622892BCC001D7C31 /* R.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		40F9BDE822892FBD001D7C31 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				40F9BDF122893B23001D7C31 /* API.strings */,
+				40F9BDE922893007001D7C31 /* NavigationBar.strings */,
+				40F9BDEB2289314E001D7C31 /* AccessibilityLabels.strings */,
+				40F9BDED22893325001D7C31 /* StateView.strings */,
+				40F9BDEF22893699001D7C31 /* ViewModel.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 		776F19D7A8A338DF2B029960 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -477,6 +519,7 @@
 			buildConfigurationList = 40E50B6B22834AD000349724 /* Build configuration list for PBXNativeTarget "MercadoLivreChallenge" */;
 			buildPhases = (
 				8B20A5C82379BD4F58556849 /* [CP] Check Pods Manifest.lock */,
+				40F9BDE322892AC4001D7C31 /* ShellScript */,
 				40E50B4A22834ACD00349724 /* Sources */,
 				40E50B4B22834ACD00349724 /* Frameworks */,
 				40E50B4C22834ACD00349724 /* Resources */,
@@ -579,7 +622,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F9BDEA22893007001D7C31 /* NavigationBar.strings in Resources */,
 				40E50B5C22834AD000349724 /* LaunchScreen.storyboard in Resources */,
+				40F9BDEC2289314E001D7C31 /* AccessibilityLabels.strings in Resources */,
+				40F9BDF222893B23001D7C31 /* API.strings in Resources */,
+				40F9BDF022893699001D7C31 /* ViewModel.strings in Resources */,
+				40F9BDEE22893325001D7C31 /* StateView.strings in Resources */,
 				40E50B5922834AD000349724 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +663,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
@@ -630,6 +679,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -641,6 +691,25 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MercadoLivreChallenge-MercadoLivreChallengeTests/Pods-MercadoLivreChallenge-MercadoLivreChallengeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		40F9BDE322892AC4001D7C31 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		691CD24CCE4438FE1A1066F7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -654,6 +723,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -663,6 +733,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -748,6 +819,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
@@ -759,6 +831,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -797,6 +870,7 @@
 				4083624F2285B4EA00E1B8B1 /* UIView+ActivityIndicator.swift in Sources */,
 				40E50B96228357D600349724 /* ProductListTableViewCell.swift in Sources */,
 				40E50B852283560A00349724 /* ApplicationCoordinator.swift in Sources */,
+				40F9BDE722892BCC001D7C31 /* R.generated.swift in Sources */,
 				40E50B892283568400349724 /* ProductListCoordinator.swift in Sources */,
 				4002E9832285D6E4001982F9 /* ProductViewState.swift in Sources */,
 				4002E9872285D858001982F9 /* ProductViewStateView.swift in Sources */,

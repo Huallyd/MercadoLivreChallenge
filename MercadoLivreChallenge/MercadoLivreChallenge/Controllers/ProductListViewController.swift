@@ -16,7 +16,7 @@ final class ProductListViewController: UIViewController {
     private lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
         searchBar.delegate = self
-        searchBar.accessibilityLabel = "Search Bar"
+        searchBar.accessibilityLabel = R.string.accessibilityLabels.searchBar()
         searchBar.barTintColor = .lightYellow
 
         return searchBar
@@ -83,7 +83,7 @@ final class ProductListViewController: UIViewController {
     // MARK: Private functions
 
     private func setupView() {
-        view.accessibilityLabel = "Search List"
+        view.accessibilityLabel = R.string.accessibilityLabels.productList()
     }
 
     private func setupLayout() {

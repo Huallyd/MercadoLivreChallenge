@@ -26,11 +26,13 @@ struct ProductViewModel {
         soldQuantity = "\(product.soldQuantity)"
         condition = product.condition.rawValue
 
-        if product.condition.rawValue.isEmpty {
-            status = product.soldQuantity == 0 ? "sem vendas" : "\(product.soldQuantity) vendidos"
+        let strings = R.string.viewModel.self
+
+        if condition == "" {
+            status = soldQuantity == "0" ? strings.noSales() : strings.quantitySales(soldQuantity)
         } else {
-            status = product.soldQuantity == 0 ? "\(product.condition) - sem vendas"
-                                               : "\(product.condition) - \(product.soldQuantity) vendidos"
+            status = soldQuantity == "0" ? strings.conditionWithNoSales(condition)
+                                         : strings.conditionWithSales(condition, soldQuantity)
         }
     }
 }

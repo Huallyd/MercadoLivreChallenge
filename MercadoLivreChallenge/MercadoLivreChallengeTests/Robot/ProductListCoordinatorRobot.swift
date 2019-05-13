@@ -30,8 +30,8 @@ final class ProductListCoordinatorRobot: BaseRobot {
     }
 
     func search(text: String) -> Self {
-        tester.enterText(text, intoViewWithAccessibilityLabel: "Search Bar")
-        tester.tapView(withAccessibilityLabel: "Search")
+        tester.enterText(text, intoViewWithAccessibilityLabel: R.string.accessibilityLabels.searchBar())
+        tester.tapView(withAccessibilityLabel: R.string.accessibilityLabels.searchConfirmButton())
 
         return self
     }
@@ -42,7 +42,7 @@ final class ProductListCoordinatorRobot: BaseRobot {
 }
 
 final class ProductListCoordinatorResult: BaseRobot {
-    let viewLabel = "Search List"
+    let viewLabel = R.string.accessibilityLabels.productList()
 
     @discardableResult
     func checkInitialStateList() -> ProductListCoordinatorResult {

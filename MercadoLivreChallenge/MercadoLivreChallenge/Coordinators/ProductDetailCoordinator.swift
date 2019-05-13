@@ -11,7 +11,7 @@ import UIKit
 final class ProductDetailCoordinator {
     private lazy var productDetailViewController: ProductDetailViewController = {
         let viewController = ProductDetailViewController(viewModel: viewModel)
-        viewController.title = "Detalhe"
+        viewController.title = R.string.navigationBar.productDetail()
 
         return viewController
     }()

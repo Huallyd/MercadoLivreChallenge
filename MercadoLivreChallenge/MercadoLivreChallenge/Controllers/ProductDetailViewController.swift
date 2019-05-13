@@ -20,7 +20,7 @@ final class ProductDetailViewController: UIViewController {
         let imageView = RoundImageView(cornerRadius: 22)
         imageView.contentMode = .scaleAspectFit
         imageView.kf.setImage(with: viewModel.thumbnail,
-                              placeholder: UIImage(named: "placeholder_product"))
+                              placeholder: R.image.placeholder_product())
 
         return imageView
     }()

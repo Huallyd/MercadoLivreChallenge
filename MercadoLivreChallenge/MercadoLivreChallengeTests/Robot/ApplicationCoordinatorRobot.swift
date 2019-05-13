@@ -26,14 +26,14 @@ final class ApplicationCoordinatorRobot: BaseRobot {
     }
 
     func search(text: String) -> Self {
-        tester.enterText(text, intoViewWithAccessibilityLabel: "Search Bar")
-        tester.tapView(withAccessibilityLabel: "Search")
+        tester.enterText(text, intoViewWithAccessibilityLabel: R.string.accessibilityLabels.searchBar())
+        tester.tapView(withAccessibilityLabel: R.string.accessibilityLabels.searchConfirmButton())
 
         return self
     }
 
     func tapCell() -> Self {
-        tester.tapView(withAccessibilityLabel: "Product Cell")
+        tester.tapView(withAccessibilityLabel: R.string.accessibilityLabels.productCell())
 
         return self
     }
@@ -44,7 +44,7 @@ final class ApplicationCoordinatorRobot: BaseRobot {
 }
 
 final class ApplicationCoordinatorResult: BaseRobot {
-    let viewLabel = "Navigation Application"
+    let viewLabel = R.string.accessibilityLabels.navigationApplicaton()
 
     @discardableResult
     func checkProductList() -> ApplicationCoordinatorResult {

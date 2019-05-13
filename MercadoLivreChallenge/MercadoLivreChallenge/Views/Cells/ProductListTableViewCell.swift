@@ -60,7 +60,7 @@ final class ProductListTableViewCell: UITableViewCell, Reusable {
     }
 
     private func setupView() {
-        accessibilityLabel = "Product Cell"
+        accessibilityLabel = R.string.accessibilityLabels.productCell()
     }
 
     private func setupLayout() {
@@ -83,7 +83,7 @@ final class ProductListTableViewCell: UITableViewCell, Reusable {
         priceLabel.text = "\(viewModel.currency) \(viewModel.price)"
         conditionLabel.text = viewModel.condition
         productImageView.kf.setImage(with: viewModel.thumbnail,
-                                     placeholder: UIImage(named: "placeholder_product"))
+                                     placeholder: R.image.placeholder_product())
     }
 }
 

@@ -1,0 +1,10 @@
+/* 
+  Texts.strings
+  MercadoLivreChallenge
+
+  Created by Huallyd Smadi on 13/05/19.
+  Copyright © 2019 Huallyd Smadi. All rights reserved.
+*/
+
+"productList" = "Produtos";
+"productDetail" = "Detalhe";
